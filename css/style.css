@@ -169,3 +169,63 @@ a.button,button.button{
     pointer-events:auto !important;
   }
 }
+
+
+/* VYNTRO Liquid Glass surfaces — apply consistently across all content cards */
+.project,
+.gallery-tile,
+.item,
+.service,
+.step,
+.contact-panel,
+.about-visual{
+  position:relative;
+  isolation:isolate;
+  background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.018)) !important;
+  -webkit-backdrop-filter:blur(22px) saturate(155%);
+  backdrop-filter:blur(22px) saturate(155%);
+  border:1px solid rgba(255,255,255,.14) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.13),
+    inset 0 -1px 0 rgba(255,255,255,.035),
+    0 12px 34px rgba(0,0,0,.22);
+}
+.project::before,
+.gallery-tile::before,
+.item::before,
+.service::before,
+.step::before,
+.contact-panel::before,
+.about-visual::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  pointer-events:none;
+  z-index:2;
+  background:linear-gradient(135deg,rgba(255,255,255,.10),transparent 38%,transparent 72%,rgba(255,255,255,.025));
+  opacity:.65;
+}
+.project:hover,
+.gallery-tile:hover,
+.item:hover,
+.service:hover,
+.step:hover{
+  border-color:rgba(255,255,255,.28) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 18px 42px rgba(0,0,0,.32);
+  transform:translateY(-3px);
+}
+.project-media,
+.gallery-tile img,
+.item img{
+  position:relative;
+}
+.project-info{
+  background:linear-gradient(180deg,rgba(24,24,24,.62),rgba(12,12,12,.84));
+  -webkit-backdrop-filter:blur(16px);
+  backdrop-filter:blur(16px);
+}
+@media(prefers-reduced-motion:reduce){
+  .project,.gallery-tile,.item,.service,.step{transition:none !important}
+  .project:hover,.gallery-tile:hover,.item:hover,.service:hover,.step:hover{transform:none}
+}
