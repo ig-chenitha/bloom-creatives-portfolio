@@ -272,3 +272,54 @@ nav,.button,.nav-cta,.filter,.project-title,.project-info,
     padding-right:20px;
   }
 }
+
+
+/* Balanced card alignment and responsive grids — Services + Process only */
+.services,
+.process{
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.services>.service,
+.process>.step{
+  min-width:0;
+  max-width:100%;
+  padding:26px 20px !important;
+  overflow-wrap:anywhere;
+}
+.services>.service:first-child,
+.process>.step:first-child{
+  padding-left:20px !important;
+}
+.services>.service+.service,
+.process>.step+.step{
+  border-left:1px solid var(--line);
+}
+.services>.service p,
+.process>.step p{
+  overflow-wrap:anywhere;
+}
+@media(max-width:800px){
+  .services,.process{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .services>.service,
+  .process>.step{padding:24px 18px !important}
+  .services>.service:nth-child(odd),
+  .process>.step:nth-child(odd){border-left:0}
+  .services>.service:nth-child(even),
+  .process>.step:nth-child(even){border-left:1px solid var(--line)}
+  .services>.service:nth-child(n+3),
+  .process>.step:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media(max-width:520px){
+  .services,.process{grid-template-columns:minmax(0,1fr)}
+  .services>.service,
+  .process>.step{
+    padding:24px 20px !important;
+    border-left:0 !important;
+    border-top:1px solid var(--line);
+  }
+  .services>.service:first-child,
+  .process>.step:first-child{border-top:0}
+}
