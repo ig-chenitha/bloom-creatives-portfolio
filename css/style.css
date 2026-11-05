@@ -494,3 +494,7 @@ body.light-theme .menu-toggle{color:#171717;border-color:#17171730;background:#f
 body.light-theme .lightbox{background:#000e}
 body.light-theme ::selection{background:#171717;color:#fff}
 @media(prefers-reduced-motion:reduce){.theme-toggle{transition:none}}
+
+
+/* Keep the white VYNTRO wordmark visible on the light surface */
+body.light-theme .logo img{filter:invert(1)}
