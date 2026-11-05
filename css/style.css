@@ -125,3 +125,30 @@ a.button,button.button{
 }
 .filter{border-radius:999px !important}
 .menu-toggle{border-radius:999px !important}
+
+
+/* Mobile navigation visibility fix: hidden until hamburger is tapped */
+@media(max-width:800px){
+  header .nav-links:not(.open){
+    display:none !important;
+  }
+  header .nav-links.open{
+    display:flex !important;
+    position:absolute;
+    top:calc(100% + 8px);
+    left:4.5%;
+    right:4.5%;
+    z-index:30;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:18px;
+    padding:22px 20px;
+    background:linear-gradient(145deg,rgba(38,38,38,.82),rgba(12,12,12,.78));
+    -webkit-backdrop-filter:blur(24px) saturate(165%);
+    backdrop-filter:blur(24px) saturate(165%);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:18px;
+    box-shadow:0 18px 50px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.13);
+  }
+  header .nav-links.open a{display:block;width:100%;padding:5px 2px}
+}
