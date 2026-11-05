@@ -14,3 +14,49 @@ document.getElementById('closePreview').addEventListener('click',closePreview);l
 /* Close mobile navigation with Escape or when tapping outside */
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&navLinks?.classList.contains('open')){navLinks.classList.remove('open');header?.classList.remove('menu-open');menuToggle?.setAttribute('aria-expanded','false');if(menuToggle)menuToggle.textContent='☰'}});
 document.addEventListener('click',e=>{if(navLinks?.classList.contains('open')&&!e.target.closest('header')){navLinks.classList.remove('open');header?.classList.remove('menu-open');menuToggle?.setAttribute('aria-expanded','false');if(menuToggle)menuToggle.textContent='☰'}});
+\n
+/* VYNTRO feedback — public submission and approved reviews */
+const VYNTRO_SUPABASE_URL="https://fcjrqzohjakjxvhruubc.supabase.co";
+const VYNTRO_SUPABASE_KEY="sb_publishable_RkG0M_heNrwIpWmmjOHZZg_fSNth8Ew";
+const feedbackClient=window.supabase?.createClient(VYNTRO_SUPABASE_URL,VYNTRO_SUPABASE_KEY);
+const feedbackForm=document.getElementById('feedbackForm');
+const feedbackStatus=document.getElementById('feedbackStatus');
+let selectedRating=0;
+document.querySelectorAll('.rating-star').forEach(star=>star.addEventListener('click',()=>{
+ selectedRating=Number(star.dataset.rating);
+ document.querySelectorAll('.rating-star').forEach(s=>{const active=Number(s.dataset.rating)<=selectedRating;s.classList.toggle('selected',active);s.setAttribute('aria-pressed',String(Number(s.dataset.rating)===selectedRating))});
+}));
+async function loadApprovedFeedback(){
+ if(!feedbackClient)return;
+ const {data,error}=await feedbackClient.from('vyntro_feedback').select('display_name,rating,message,created_at').eq('status','approved').order('created_at',{ascending:false}).limit(12);
+ const host=document.getElementById('approvedReviews');
+ if(error){host.innerHTML='<p class="feedback-note">Reviews are temporarily unavailable.</p>';return}
+ const reviews=data||[];
+ document.getElementById('reviewCount').textContent=String(reviews.length);
+ document.getElementById('averageRating').textContent=reviews.length?(reviews.reduce((sum,r)=>sum+r.rating,0)/reviews.length).toFixed(1)+' ★':'—';
+ host.replaceChildren();
+ if(!reviews.length){host.innerHTML='<p class="feedback-note">No published reviews yet. Be the first to share your experience.</p>';return}
+ reviews.forEach(review=>{
+  const card=document.createElement('article');card.className='review-card';
+  const stars=document.createElement('div');stars.className='review-stars';stars.textContent='★'.repeat(review.rating)+'☆'.repeat(5-review.rating);
+  const message=document.createElement('p');message.textContent=review.message;
+  const name=document.createElement('strong');name.textContent=review.display_name;
+  card.append(stars,message,name);host.append(card);
+ });
+}
+if(feedbackForm){
+ feedbackForm.addEventListener('submit',async event=>{
+  event.preventDefault();
+  if(!feedbackClient){feedbackStatus.textContent='Feedback service is unavailable right now.';return}
+  const display_name=document.getElementById('feedbackName').value.trim();
+  const message=document.getElementById('feedbackMessage').value.trim();
+  if(!selectedRating){feedbackStatus.textContent='Please choose a star rating.';return}
+  const submit=feedbackForm.querySelector('[type=submit]');submit.disabled=true;submit.textContent='Submitting…';
+  const {error}=await feedbackClient.from('vyntro_feedback').insert({display_name,rating:selectedRating,message});
+  submit.disabled=false;submit.textContent='Submit feedback ↗';
+  if(error){feedbackStatus.textContent='Could not submit right now. Please try again.';return}
+  feedbackForm.reset();selectedRating=0;document.querySelectorAll('.rating-star').forEach(s=>{s.classList.remove('selected');s.setAttribute('aria-pressed','false')});
+  feedbackStatus.textContent='Thank you! Your feedback is awaiting approval.';
+ });
+}
+loadApprovedFeedback();
