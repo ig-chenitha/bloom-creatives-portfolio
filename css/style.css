@@ -440,61 +440,8 @@ resize:vertical;}
 @media(max-width:520px){.form-row{grid-template-columns:1fr}.inquiry-form{padding:20px}.inquiry-submit{width:100%}}
 
 
-/* VYNTRO theme switcher */
-.theme-toggle{flex:0 0 42px;width:42px;height:42px;display:inline-grid;place-items:center;border:1px solid #ffffff35;border-radius:50%;background:rgba(255,255,255,.07);color:#f5f5f2;font-size:21px;line-height:1;cursor:pointer;transition:transform .2s ease,background .2s ease,border-color .2s ease}
-.theme-toggle:hover{transform:rotate(18deg);background:rgba(255,255,255,.15);border-color:#ffffff75}
-.theme-toggle:focus-visible{outline:2px solid currentColor;outline-offset:4px}
-@media(max-width:800px){.theme-toggle{margin-left:auto;flex-basis:42px;width:42px;height:42px}.nav{gap:12px}}
+/* VYNTRO theme switcher */.nav{gap:12px}}
 
 /* Complete light theme for the portfolio and gallery */
-body.light-theme{--bg:#f4f4f1;--panel:#fff;--panel2:#eaeae6;--white:#171717;--muted:#626262;--line:#17171720;--soft:#424242;background:var(--bg);color:var(--white);color-scheme:light}
-body.light-theme header.scrolled,body.light-theme.gallery-page header{background:rgba(244,244,241,.93);border-bottom-color:#17171720}
-body.light-theme .nav-links{color:#555}
-body.light-theme .nav-links a:hover,body.light-theme .socials a:hover{color:#000}
-body.light-theme .theme-toggle{color:#171717;border-color:#17171730;background:#ffffffb8}
-body.light-theme .nav-cta,body.light-theme .button{background:#171717;color:#fff;border-color:#171717}
-body.light-theme .nav-cta:hover,body.light-theme .button:hover{background:transparent;color:#171717}
-body.light-theme .button.secondary{background:transparent;color:#171717;border-color:#777}
-body.light-theme .button.secondary:hover{background:#171717;color:#fff}
-body.light-theme .hero{background:radial-gradient(ellipse at 78% 48%,#deded8 0,transparent 38%),linear-gradient(120deg,#f4f4f1,#eaeae6 58%,#f4f4f1)}
-body.light-theme .hero:after{border-color:#17171712;box-shadow:0 0 0 55px #17171708,0 0 0 110px #17171705}
-body.light-theme .hero-copy,body.light-theme .section-head p,body.light-theme .about-copy p,body.light-theme .contact p,body.light-theme .inquiry-intro p{color:#626262}
-body.light-theme .eyebrow,body.light-theme .kicker,body.light-theme .scroll-note{color:#666}
-body.light-theme .about-visual{background:linear-gradient(145deg,#e5e5df,#f8f8f5)!important;border-color:#17171720!important}
-body.light-theme .about-visual:before{color:#1717170b}
-body.light-theme .about-visual span{color:#626262}
-body.light-theme .service,body.light-theme .step,body.light-theme .project,body.light-theme .gallery-tile,body.light-theme .item,body.light-theme .contact-panel,body.light-theme .skill-card,body.light-theme .feedback-form-panel,body.light-theme .feedback-reviews-panel,body.light-theme .inquiry-form{background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(235,235,230,.95))!important;border-color:#17171720!important;box-shadow:inset 0 1px 0 #fff,0 12px 30px #1717170a}
-body.light-theme .service h3,body.light-theme .step h3,body.light-theme .gallery-tile strong,body.light-theme .project-info strong,body.light-theme .meta strong,body.light-theme .skill-card h3,body.light-theme .inquiry-intro h3,body.light-theme .feedback-form-panel h3,body.light-theme .reviews-summary h3{color:#171717}
-body.light-theme .service p,body.light-theme .step p,body.light-theme .gallery-tile small,body.light-theme .skill-card p,body.light-theme .project-info small,body.light-theme .meta span,body.light-theme .skill-card>span{color:#666}
-body.light-theme .project-media,body.light-theme .media{background:#e8e8e3}
-body.light-theme .project-info{background:linear-gradient(180deg,#ffffffdf,#f1f1ed)}
-body.light-theme .project-index{color:#666}
-body.light-theme .feedback-section{background:#ededE9;border-color:#17171718}
-body.light-theme .feedback-subtitle,body.light-theme .feedback-note,body.light-theme .feedback-card p{color:#666}
-body.light-theme .feedback-card{background:#fff;border-color:#17171720}
-body.light-theme .feedback-mark,body.light-theme .feedback-card h3,body.light-theme .feedback-card strong{color:#171717}
-body.light-theme .feedback-label,body.light-theme .feedback-type,body.light-theme .reviews-score span{color:#666}
-body.light-theme .reviews-summary,body.light-theme .review-card{border-color:#17171720}
-body.light-theme .review-card p{color:#555}
-body.light-theme .review-card strong{color:#171717}
-body.light-theme .review-stars,body.light-theme .rating-star.selected{color:#171717}
-body.light-theme .rating-star{color:#aaa}
-body.light-theme #feedbackForm label,body.light-theme .inquiry-form label{color:#333}
-body.light-theme #feedbackForm input,body.light-theme #feedbackForm textarea,body.light-theme .inquiry-form input,body.light-theme .inquiry-form select,body.light-theme .inquiry-form textarea{background:#fff;color:#171717;border-color:#c9c9c3;color-scheme:light}
-body.light-theme .inquiry-note{color:#666}
-body.light-theme .skill-tags span{color:#444;border-color:#17171725}
-body.light-theme footer{border-color:#17171720;color:#666}
-body.light-theme .socials{color:#555}
-body.light-theme .filters .filter{color:#555;border-color:#17171730}
-body.light-theme .filters .filter.active,body.light-theme .filters .filter:hover{background:#171717;color:#fff;border-color:#171717}
-body.light-theme .empty{color:#666}
-body.light-theme .nav-links.open{background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(235,235,230,.96));border-color:#17171724;box-shadow:0 18px 40px #17171718}
-body.light-theme .nav-links.open a{color:#222}
-body.light-theme .menu-toggle{color:#171717;border-color:#17171730;background:#ffffffb8}
-body.light-theme .lightbox{background:#000e}
-body.light-theme ::selection{background:#171717;color:#fff}
-@media(prefers-reduced-motion:reduce){.theme-toggle{transition:none}}
-
 
 /* Keep the white VYNTRO wordmark visible on the light surface */
-body.light-theme .logo img{filter:invert(1)}
