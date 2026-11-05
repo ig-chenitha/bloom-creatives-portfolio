@@ -633,76 +633,76 @@ footer{border-top-color:rgba(255,23,56,.22)}
   --bg:#050505;
   --panel:#090909;
   --panel2:#101010;
-  --white:#ff1744;
+  --white:#ff4b16;
   --muted:#ff667f;
-  --line:rgba(255,23,68,.42);
+  --line:rgba(255,75,22,.42);
   --soft:#ff8fa3;
-  --vyntro-orange:#ff1744;
-  --vyntro-orange-bright:#ff1744;
+  --vyntro-orange:#ff4b16;
+  --vyntro-orange-bright:#ff4b16;
   --vyntro-orange-deep:#c9002b;
 }
-body{background-color:#050505 !important;color:#ff1744 !important}
+body{background-color:#050505 !important;color:#ff4b16 !important}
 body :is(h1,h2,h3,h4,h5,h6,p,span,small,strong,em,b,i,label,li,a,button,.eyebrow,.kicker,.muted,.description,.project-index,.service small,.step b){
-  color:#ff1744 !important;
+  color:#ff4b16 !important;
 }
 body :is(a,button,.button,.nav-cta,.filter,.menu-toggle){
-  border-color:#ff1744 !important;
+  border-color:#ff4b16 !important;
 }
 body :is(.button,.nav-cta,.filter.active,.filter:hover){
-  background:#ff1744 !important;
+  background:#ff4b16 !important;
   color:#050505 !important;
-  box-shadow:0 0 10px rgba(255,23,68,.42),0 0 24px rgba(255,23,68,.20);
+  box-shadow:0 0 10px rgba(255,75,22,.42),0 0 24px rgba(255,75,22,.20);
 }
 body :is(.button:hover,.nav-cta:hover){
   background:transparent !important;
-  color:#ff1744 !important;
+  color:#ff4b16 !important;
 }
 header.scrolled,header .nav,.nav-links,.nav-links.open{
   background-color:rgba(5,5,5,.96) !important;
-  border-color:rgba(255,23,68,.45) !important;
+  border-color:rgba(255,75,22,.45) !important;
 }
 .hero{
   background:
-    radial-gradient(ellipse at 78% 48%,rgba(255,23,68,.30) 0,transparent 40%),
-    linear-gradient(120deg,#050505,#16050a 55%,#050505) !important;
+    radial-gradient(ellipse at 78% 48%,rgba(255,75,22,.30) 0,transparent 40%),
+    linear-gradient(120deg,#050505,#160d05 55%,#050505) !important;
 }
 .hero:after{
-  border-color:rgba(255,23,68,.45) !important;
-  box-shadow:0 0 0 55px rgba(255,23,68,.08),0 0 0 110px rgba(255,23,68,.045) !important;
+  border-color:rgba(255,75,22,.45) !important;
+  box-shadow:0 0 0 55px rgba(255,75,22,.08),0 0 0 110px rgba(255,75,22,.045) !important;
 }
 body :is(.project,.gallery-tile,.item,.service,.step,.contact-panel,.about-visual,.project-media,.media){
-  border-color:rgba(255,23,68,.48) !important;
+  border-color:rgba(255,75,22,.48) !important;
 }
 body :is(.project,.item,.project-media,.media){
   background-color:#090909 !important;
 }
 .gallery-tile,.about-visual,.contact-panel{
-  background:linear-gradient(145deg,#19050b,#070707) !important;
+  background:linear-gradient(145deg,#190c05,#070707) !important;
 }
 .project-info{
-  background:linear-gradient(180deg,rgba(30,3,10,.78),rgba(5,5,5,.94)) !important;
+  background:linear-gradient(180deg,rgba(30,12,3,.78),rgba(5,5,5,.94)) !important;
 }
 body :is(.project,.gallery-tile,.item,.service,.step,.contact-panel,.about-visual){
-  box-shadow:inset 0 1px 0 rgba(255,23,68,.20),0 0 18px rgba(255,23,68,.10) !important;
+  box-shadow:inset 0 1px 0 rgba(255,75,22,.20),0 0 18px rgba(255,75,22,.10) !important;
 }
 body :is(.project:hover,.gallery-tile:hover,.item:hover,.service:hover,.step:hover){
-  border-color:#ff1744 !important;
-  box-shadow:0 0 18px rgba(255,23,68,.28) !important;
+  border-color:#ff4b16 !important;
+  box-shadow:0 0 18px rgba(255,75,22,.28) !important;
 }
 body svg :is(path,circle,rect,line,polyline,polygon){
-  stroke:#ff1744;
+  stroke:#ff4b16;
 }
-body svg path[fill]:not([fill="none"]){fill:#ff1744}
-::selection{background:#ff1744 !important;color:#050505 !important}
-:focus-visible{outline-color:#ff1744 !important}
+body svg path[fill]:not([fill="none"]){fill:#ff4b16}
+::selection{background:#ff4b16 !important;color:#050505 !important}
+:focus-visible{outline-color:#ff4b16 !important}
 @media(max-width:800px){
   .nav-links,.nav-links.open{
     background:rgba(5,5,5,.98) !important;
-    border-color:rgba(255,23,68,.55) !important;
+    border-color:rgba(255,75,22,.55) !important;
   }
   .menu-toggle{
-    color:#ff1744 !important;
-    border-color:#ff1744 !important;
-    box-shadow:0 0 12px rgba(255,23,68,.20);
+    color:#ff4b16 !important;
+    border-color:#ff4b16 !important;
+    box-shadow:0 0 12px rgba(255,75,22,.20);
   }
 }
