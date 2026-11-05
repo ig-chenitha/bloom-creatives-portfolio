@@ -557,3 +557,12 @@ body.gallery-page .nav-links a.active{color:#fff}
   .skills-page #skills .skill-card,
   .skills-page #skills .skill-tags span{transition:none}
 }
+
+
+/* Gallery artwork preview must cover the fixed navigation bar */
+body.gallery-page .lightbox{
+  z-index:1000;
+}
+body.gallery-page .lightbox button{
+  z-index:1001;
+}
