@@ -14,7 +14,8 @@ document.getElementById('closePreview').addEventListener('click',closePreview);l
 /* Close mobile navigation with Escape or when tapping outside */
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&navLinks?.classList.contains('open')){navLinks.classList.remove('open');header?.classList.remove('menu-open');menuToggle?.setAttribute('aria-expanded','false');if(menuToggle)menuToggle.textContent='☰'}});
 document.addEventListener('click',e=>{if(navLinks?.classList.contains('open')&&!e.target.closest('header')){navLinks.classList.remove('open');header?.classList.remove('menu-open');menuToggle?.setAttribute('aria-expanded','false');if(menuToggle)menuToggle.textContent='☰'}});
-\n
+
+
 /* VYNTRO feedback — public submission and approved reviews */
 const VYNTRO_SUPABASE_URL="https://fcjrqzohjakjxvhruubc.supabase.co";
 const VYNTRO_SUPABASE_KEY="sb_publishable_RkG0M_heNrwIpWmmjOHZZg_fSNth8Ew";
