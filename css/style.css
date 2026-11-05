@@ -381,7 +381,7 @@ nav,.button,.nav-cta,.filter,.project-title,.project-info,
 .feedback-subtitle,.feedback-note{color:#999;font-size:12px;line-height:1.7}
 #feedbackForm{display:flex;flex-direction:column;gap:10px;margin-top:24px}
 #feedbackForm label{font-size:11px;color:#ddd;font-weight:600;margin-top:7px}
-#feedbackForm input,#feedbackForm textarea{width:100%;background:#080808;color:#fff;border:1px solid #393939;padding:13px 14px;font:13px 'DM Sans',sans-serif;border-radius:0;outline:none}
+#feedbackForm input,#feedbackForm textarea{width:100%;background:#080808;color:#fff;border:1px solid #393939;padding:13px 14px;font:13px 'DM Sans',sans-serif;border-radius:12px;outline:none;resize:none;}
 #feedbackForm input:focus,#feedbackForm textarea:focus{border-color:#fff}
 #feedbackForm textarea{resize:vertical;min-height:120px}
 .rating-picker{display:flex;gap:8px}.rating-star{background:transparent;border:0;color:#555;font-size:29px;line-height:1;cursor:pointer;padding:3px}.rating-star.selected{color:#fff}
@@ -412,3 +412,6 @@ nav,.button,.nav-cta,.filter,.project-title,.project-info,
 .rating-star{
   border-radius:10px;
 }
+
+/* Hide native textarea resize grip */
+#feedbackForm textarea{resize:none;}
