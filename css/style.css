@@ -114,3 +114,14 @@ input,select,textarea{
   .project,.item,.gallery-tile,.service-card,.work-card,.project-card{border-radius:16px}
   .hero-actions .button,.nav-cta{border-radius:12px}
 }
+
+
+/* Reference-style pill buttons */
+.button,.nav-cta,.hero-actions a,.hero-actions button,
+a.button,button.button{
+  border-radius:999px !important;
+  padding-left:26px;
+  padding-right:26px;
+}
+.filter{border-radius:999px !important}
+.menu-toggle{border-radius:999px !important}
