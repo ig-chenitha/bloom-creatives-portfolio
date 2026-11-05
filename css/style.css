@@ -566,3 +566,85 @@ body.gallery-page .lightbox{
 body.gallery-page .lightbox button{
   z-index:1001;
 }
+
+
+/* Page entrance animations — Gallery */
+.gallery-page .intro>div,
+.gallery-page .intro>p,
+.gallery-page .filters{
+  opacity:0;
+  animation:pageRiseIn .75s cubic-bezier(.2,.7,.2,1) forwards;
+}
+.gallery-page .intro>p{animation-delay:.12s}
+.gallery-page .filters{animation-delay:.2s}
+.gallery-page .item{
+  opacity:0;
+  animation:pageRiseIn .7s cubic-bezier(.2,.7,.2,1) forwards;
+  transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;
+}
+.gallery-page .item:nth-child(1){animation-delay:.24s}
+.gallery-page .item:nth-child(2){animation-delay:.34s}
+.gallery-page .item:nth-child(3){animation-delay:.44s}
+.gallery-page .item:nth-child(4){animation-delay:.54s}
+.gallery-page .item:nth-child(5){animation-delay:.64s}
+.gallery-page .item:nth-child(6){animation-delay:.74s}
+.gallery-page .item:hover{
+  transform:translateY(-6px);
+  border-color:rgba(255,255,255,.3)!important;
+  box-shadow:0 18px 38px rgba(0,0,0,.3);
+}
+.gallery-page .filters .filter{
+  transition:transform .25s ease,background .25s ease,border-color .25s ease;
+}
+.gallery-page .filters .filter:hover{transform:translateY(-2px)}
+
+/* Page entrance animations — Contact */
+.contact-page .contact-page-hero .kicker,
+.contact-page .contact-page-hero h1,
+.contact-page .contact-page-hero> .wrap>p,
+.contact-page .contact-page-links,
+.contact-page .inquiry-intro,
+.contact-page .inquiry-form{
+  opacity:0;
+  animation:pageRiseIn .8s cubic-bezier(.2,.7,.2,1) forwards;
+}
+.contact-page .contact-page-hero h1{animation-delay:.1s}
+.contact-page .contact-page-hero> .wrap>p{animation-delay:.2s}
+.contact-page .contact-page-links{animation-delay:.3s}
+.contact-page .inquiry-intro{animation-delay:.16s}
+.contact-page .inquiry-form{animation-delay:.28s}
+.contact-page .contact-page-links a{
+  transition:color .25s ease,border-color .25s ease,transform .25s ease;
+}
+.contact-page .contact-page-links a:hover{transform:translateY(-3px)}
+.contact-page .inquiry-form input,
+.contact-page .inquiry-form select,
+.contact-page .inquiry-form textarea{
+  transition:border-color .25s ease,box-shadow .25s ease,background .25s ease;
+}
+.contact-page .inquiry-form input:focus,
+.contact-page .inquiry-form select:focus,
+.contact-page .inquiry-form textarea:focus{
+  border-color:rgba(255,255,255,.65);
+  box-shadow:0 0 0 3px rgba(255,255,255,.07);
+}
+.contact-page .inquiry-submit{transition:transform .25s ease,box-shadow .25s ease}
+.contact-page .inquiry-submit:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(255,255,255,.1)}
+
+@keyframes pageRiseIn{
+  from{opacity:0;transform:translateY(22px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@media(prefers-reduced-motion:reduce){
+  .gallery-page .intro>div,.gallery-page .intro>p,.gallery-page .filters,
+  .gallery-page .item,.contact-page .contact-page-hero .kicker,
+  .contact-page .contact-page-hero h1,.contact-page .contact-page-hero> .wrap>p,
+  .contact-page .contact-page-links,.contact-page .inquiry-intro,
+  .contact-page .inquiry-form{
+    animation:none;opacity:1;transform:none;
+  }
+  .gallery-page .item,.gallery-page .filters .filter,
+  .contact-page .contact-page-links a,.contact-page .inquiry-form input,
+  .contact-page .inquiry-form select,.contact-page .inquiry-form textarea,
+  .contact-page .inquiry-submit{transition:none}
+}
