@@ -88,3 +88,29 @@ img{max-width:100%}
   to{opacity:1;transform:translateY(0) scale(1)}
 }
 @media(prefers-reduced-motion:reduce){.nav-links.open{animation:none}}
+
+
+/* Rounded premium UI — buttons, project cards and content panels */
+:root{--vyntro-radius-sm:10px;--vyntro-radius-md:14px;--vyntro-radius-lg:18px}
+button,.button,.nav-cta,.filter,
+a.button,a.nav-cta,
+input,select,textarea{
+  border-radius:var(--vyntro-radius-sm);
+}
+.project,.item,.gallery-tile,
+.service-card,.work-card,.project-card,.contact-card,
+.stat-card,.about-card{
+  border-radius:var(--vyntro-radius-md);
+  overflow:hidden;
+}
+.project img,.item img,.gallery-tile img,
+.service-card img,.work-card img,.project-card img{
+  border-radius:inherit;
+}
+.hero-actions .button{border-radius:12px}
+.filter{border-radius:999px;padding-left:17px;padding-right:17px}
+.lightbox button{border-radius:50%}
+@media(max-width:800px){
+  .project,.item,.gallery-tile,.service-card,.work-card,.project-card{border-radius:16px}
+  .hero-actions .button,.nav-cta{border-radius:12px}
+}
