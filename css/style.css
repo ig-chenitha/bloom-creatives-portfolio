@@ -323,3 +323,40 @@ nav,.button,.nav-cta,.filter,.project-title,.project-info,
   .services>.service:first-child,
   .process>.step:first-child{border-top:0}
 }
+
+
+/* MOBILE MENU FUNCTIONALITY — menu-only visibility and tap targets */
+@media (max-width:800px){
+  header .nav{position:relative}
+  header .menu-toggle{
+    display:grid !important;
+    place-items:center;
+    position:relative;
+    z-index:40;
+    flex:0 0 46px;
+    width:46px;
+    height:46px;
+    padding:0;
+    color:#fff;
+    cursor:pointer;
+    pointer-events:auto;
+    touch-action:manipulation;
+  }
+  header nav#navLinks:not(.open){
+    display:none !important;
+    visibility:hidden !important;
+    opacity:0 !important;
+    pointer-events:none !important;
+  }
+  header nav#navLinks.open{
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    pointer-events:auto !important;
+    position:absolute;
+    top:calc(100% + 10px);
+    left:0;
+    right:0;
+    z-index:35;
+  }
+}
