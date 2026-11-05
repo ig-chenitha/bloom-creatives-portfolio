@@ -381,9 +381,9 @@ nav,.button,.nav-cta,.filter,.project-title,.project-info,
 .feedback-subtitle,.feedback-note{color:#999;font-size:12px;line-height:1.7}
 #feedbackForm{display:flex;flex-direction:column;gap:10px;margin-top:24px}
 #feedbackForm label{font-size:11px;color:#ddd;font-weight:600;margin-top:7px}
-#feedbackForm input,#feedbackForm textarea{width:100%;background:#080808;color:#fff;border:1px solid #393939;padding:13px 14px;font:13px 'DM Sans',sans-serif;border-radius:12px;outline:none;resize:none;}
+#feedbackForm input,#feedbackForm textarea{width:100%;background:#080808;color:#fff;border:1px solid #393939;padding:13px 14px;font:13px 'DM Sans',sans-serif;border-radius:12px;outline:none;resize:vertical;}
 #feedbackForm input:focus,#feedbackForm textarea:focus{border-color:#fff}
-#feedbackForm textarea{resize:vertical;min-height:120px}
+#feedbackForm textarea{min-height:120pxresize:vertical;}
 .rating-picker{display:flex;gap:8px}.rating-star{background:transparent;border:0;color:#555;font-size:29px;line-height:1;cursor:pointer;padding:3px}.rating-star.selected{color:#fff}
 .feedback-submit{align-self:flex-start;cursor:pointer}.feedback-submit:disabled{opacity:.55;cursor:wait}
 .feedback-status{min-height:20px;color:#ccc;font-size:12px}.feedback-honeypot{position:absolute;left:-9999px;opacity:0}
@@ -402,7 +402,7 @@ nav,.button,.nav-cta,.filter,.project-title,.project-info,
 #feedbackForm input,
 #feedbackForm textarea{
   border-radius:12px;
-}
+resize:vertical;}
 .feedback-submit{
   border-radius:999px;
 }
@@ -413,5 +413,3 @@ nav,.button,.nav-cta,.filter,.project-title,.project-info,
   border-radius:10px;
 }
 
-/* Hide native textarea resize grip */
-#feedbackForm textarea{resize:none;}
