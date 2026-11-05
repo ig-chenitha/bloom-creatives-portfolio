@@ -500,3 +500,16 @@ body.gallery-page header{
 body.gallery-page main{padding-top:118px}
 body.gallery-page .nav-links a.active{color:#fff}
 @media(max-width:800px){body.gallery-page header{padding:10px 0!important}body.gallery-page main{padding-top:100px}}
+
+
+/* Dedicated skills page */
+.skills-page-hero{padding:clamp(120px,15vw,175px) 0 65px;background:radial-gradient(ellipse at 78% 42%,#202020 0,transparent 40%),linear-gradient(120deg,#080808,#101010 58%,#080808);border-bottom:1px solid var(--line)}
+.skills-page-hero h1{font:500 clamp(58px,9vw,104px)/.94 'Space Grotesk',sans-serif;letter-spacing:-.08em;margin:22px 0}
+.skills-page-hero h1 span{color:#858585}
+.skills-page-hero p{max-width:510px;color:#aaa;font-size:15px;line-height:1.9}
+.skills-page #skills{padding-top:65px}
+.skills-page-note{padding:65px 0 90px;border-top:1px solid var(--line)}
+.skills-page-note h2{font:500 clamp(38px,6vw,64px)/1 'Space Grotesk',sans-serif;letter-spacing:-.06em;margin:18px 0}
+.skills-page-note p{color:#999;line-height:1.8;margin-bottom:25px}
+.skills-page .nav-links a.active{color:#fff}
+@media(max-width:800px){.skills-page-hero{padding:110px 0 55px}.skills-page #skills{padding:55px 0}}
