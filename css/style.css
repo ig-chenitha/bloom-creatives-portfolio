@@ -559,3 +559,69 @@ footer{border-top-color:rgba(0,163,255,.22)}
 .project::before,.gallery-tile::before,.item::before,.service::before,.step::before,.contact-panel::before,.about-visual::before{
   background:linear-gradient(135deg,rgba(120,210,255,.12),transparent 38%,transparent 72%,rgba(0,145,255,.035));
 }
+
+
+/* VYNTRO NEON RED + BLACK PALETTE — color overrides only.
+   Preserve all existing structure, layout, typography, spacing and interactions. */
+:root{
+  --bg:#050505;
+  --panel:#0c0c0e;
+  --panel2:#151014;
+  --white:#fff5f5;
+  --muted:#ad9699;
+  --line:rgba(255,25,55,.24);
+  --soft:#ffc0c8;
+  --vyntro-orange:#ff1738;
+  --vyntro-orange-bright:#ff3155;
+  --vyntro-orange-deep:#a90024;
+}
+body{background-color:#050505;color:#fff5f5}
+header.scrolled{background:rgba(5,5,5,.95);border-bottom-color:rgba(255,23,56,.20)}
+.nav-links a:hover,.socials a:hover{color:#ff3155}
+.hero{
+  background:
+    radial-gradient(ellipse at 78% 48%,rgba(255,12,48,.24) 0,transparent 38%),
+    linear-gradient(120deg,#050505,#19070c 55%,#050505);
+}
+.hero:after{
+  border-color:rgba(255,23,56,.18);
+  box-shadow:0 0 0 55px rgba(255,23,56,.05),0 0 0 110px rgba(255,23,56,.028);
+}
+.hero h1 span{color:#ff3155}
+.eyebrow,.kicker{color:#ff7186}
+.nav-cta,.button{
+  color:#fff;
+  background:linear-gradient(135deg,#ff3155,#e90032);
+  border-color:#ff3155;
+}
+.nav-cta:hover,.button:hover{background:transparent;color:#ff3155;border-color:#ff1738}
+.button.secondary{background:transparent;color:#ffe1e5;border-color:rgba(255,49,85,.58)}
+.button.secondary:hover{background:#ff1738;color:#fff;border-color:#ff1738}
+.about-visual{background:linear-gradient(145deg,#300b14,#080506);border-color:rgba(255,23,56,.28)}
+.about-visual:before{color:rgba(255,23,56,.09)}
+.service small,.step b,.project-index{color:#ff7186}
+.project,.item{background:#0c0c0e}
+.project-media,.media{background:#12090d}
+.gallery-tile{background:linear-gradient(145deg,#290a12,#080506)}
+.filter{border-color:rgba(255,49,85,.42);color:#ffc0c8}
+.filter.active,.filter:hover{background:#ff1738;color:#fff;border-color:#ff1738}
+.contact-panel{background:linear-gradient(125deg,#280a12,#080506);border-color:rgba(255,23,56,.30)}
+.socials a:hover{color:#ff3155}
+footer{border-top-color:rgba(255,23,56,.22)}
+::selection{background:#ff1738;color:#fff}
+:focus-visible{outline-color:#ff3155}
+.project,.gallery-tile,.item,.service,.step,.contact-panel,.about-visual{
+  border-color:rgba(255,23,56,.20) !important;
+  box-shadow:inset 0 1px 0 rgba(255,190,200,.11),inset 0 -1px 0 rgba(255,23,56,.045),0 12px 34px rgba(0,0,0,.28);
+}
+.project:hover,.gallery-tile:hover,.item:hover,.service:hover,.step:hover{border-color:rgba(255,49,85,.46) !important}
+.project-info{background:linear-gradient(180deg,rgba(48,10,20,.70),rgba(5,5,7,.90))}
+@media(max-width:800px){
+  .nav-links{background:rgba(12,5,8,.97);border-color:rgba(255,23,56,.27)}
+  .nav-links.open{background:linear-gradient(145deg,rgba(45,8,18,.93),rgba(6,5,7,.92));border-color:rgba(255,49,85,.32)}
+  .menu-toggle{border-color:rgba(255,49,85,.42);color:#fff5f5}
+}
+/* Retint existing glass reflections only; geometry remains unchanged. */
+.project::before,.gallery-tile::before,.item::before,.service::before,.step::before,.contact-panel::before,.about-visual::before{
+  background:linear-gradient(135deg,rgba(255,150,165,.12),transparent 38%,transparent 72%,rgba(255,15,50,.04));
+}
