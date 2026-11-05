@@ -360,3 +360,16 @@ nav,.button,.nav-cta,.filter,.project-title,.project-info,
     z-index:35;
   }
 }
+
+/* CLIENT FEEDBACK — monochrome section */
+.feedback-section{background:#0b0b0b;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.feedback-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.feedback-card{min-height:285px;padding:28px;border:1px solid #ffffff24;background:linear-gradient(145deg,#151515,#0d0d0d);display:flex;flex-direction:column;align-items:flex-start}
+.feedback-mark{font:500 58px/.8 'Space Grotesk',sans-serif;color:#fff}
+.feedback-label{font-size:9px;letter-spacing:.2em;color:#999;font-weight:700;margin-top:20px}
+.feedback-card h3{font:500 22px/1.25 'Space Grotesk',sans-serif;letter-spacing:-.04em;margin:18px 0 10px}
+.feedback-card p{font-size:12px;line-height:1.8;color:#999;margin:0 0 22px}
+.feedback-type{font-size:9px;letter-spacing:.16em;color:#777;margin-top:auto}
+.feedback-invite .button{margin:4px 0 22px}
+@media(max-width:800px){.feedback-grid{grid-template-columns:1fr 1fr}.feedback-card:last-child{grid-column:1/-1}}
+@media(max-width:520px){.feedback-grid{grid-template-columns:1fr}.feedback-card:last-child{grid-column:auto}.feedback-card{min-height:245px}}
