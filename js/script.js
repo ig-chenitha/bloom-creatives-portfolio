@@ -1,6 +1,28 @@
 /* VYNTRO CREATIVES — shared site interactions */
 (() => {
   const header = document.getElementById("header");
+  // Accessible theme switcher shared by the portfolio and gallery pages.
+  const themeButton = document.getElementById("themeToggle");
+  const applyTheme = (theme) => {
+    const light = theme === "light";
+    document.body.classList.toggle("light-theme", light);
+    if (themeButton) {
+      themeButton.textContent = light ? "☾" : "☼";
+      themeButton.setAttribute("aria-label", light ? "Switch to dark mode" : "Switch to light mode");
+      themeButton.title = light ? "Switch to dark mode" : "Switch to light mode";
+      themeButton.setAttribute("aria-pressed", String(light));
+    }
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", light ? "#f4f4f1" : "#080808");
+  };
+  let savedTheme = "dark";
+  try { savedTheme = localStorage.getItem("vyntro-theme") || "dark"; } catch (_) {}
+  applyTheme(savedTheme === "light" ? "light" : "dark");
+  themeButton?.addEventListener("click", () => {
+    const nextTheme = document.body.classList.contains("light-theme") ? "dark" : "light";
+    applyTheme(nextTheme);
+    try { localStorage.setItem("vyntro-theme", nextTheme); } catch (_) {}
+  });
+
   if (header) {
     const updateHeader = () => header.classList.toggle("scrolled", window.scrollY > 24);
     updateHeader();
