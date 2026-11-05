@@ -445,3 +445,17 @@ resize:vertical;}
 /* Complete light theme for the portfolio and gallery */
 
 /* Keep the white VYNTRO wordmark visible on the light surface */
+
+/* Dedicated VYNTRO contact page */
+.contact-page-hero{padding:clamp(90px,13vw,160px) 0 76px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 78% 35%,#1c1c1c 0,transparent 42%),linear-gradient(120deg,#080808,#101010 58%,#080808)}
+.contact-page-hero h1{font:500 clamp(48px,8vw,100px)/.98 'Space Grotesk',sans-serif;letter-spacing:-.075em;margin:22px 0 24px;max-width:1000px}
+.contact-page-hero h1 span{color:#858585}
+.contact-page-hero> .wrap>p{max-width:560px;color:#aaa;font-size:15px;line-height:1.9}
+.contact-page-links{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:34px}
+.contact-page-links a{color:#f5f5f2;font-size:12px;text-decoration:none;border-bottom:1px solid #ffffff55;padding-bottom:7px}
+.contact-page-links a:hover{border-color:#fff}
+.contact-page-form-section{padding:76px 0 90px}
+.contact-page-form-section .inquiry-layout{padding-bottom:54px}
+.contact-page-form-section .contact-panel{margin-top:8px}
+.contact-page .nav-links a.active{color:#fff}
+@media(max-width:800px){.contact-page-hero{padding:90px 0 65px}.contact-page-form-section{padding:55px 0 65px}.contact-page-links{gap:14px 20px}}
