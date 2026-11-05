@@ -485,3 +485,18 @@ body.gallery-page header{
   backdrop-filter:blur(22px) saturate(155%)!important;
   -webkit-backdrop-filter:blur(22px) saturate(155%)!important;
 }
+
+
+/* Match the homepage/contact liquid-glass navbar on the gallery page */
+body.gallery-page header{
+  position:fixed!important;top:0;left:0;width:100%;z-index:20;
+  padding:10px 0!important;
+  background:rgba(18,18,18,.42)!important;
+  border:1px solid rgba(255,255,255,.12)!important;border-radius:18px;
+  box-shadow:0 8px 32px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.10)!important;
+  backdrop-filter:blur(22px) saturate(155%)!important;
+  -webkit-backdrop-filter:blur(22px) saturate(155%)!important;
+}
+body.gallery-page main{padding-top:118px}
+body.gallery-page .nav-links a.active{color:#fff}
+@media(max-width:800px){body.gallery-page header{padding:10px 0!important}body.gallery-page main{padding-top:100px}}
