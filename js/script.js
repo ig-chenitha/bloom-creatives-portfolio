@@ -43,8 +43,8 @@
     });
   });
 
-  const openGalleryPreview = (item) => {
-    const image = item.querySelector("img");
+  const openGalleryPreview = (item, clickedImage = null) => {
+    const image = clickedImage || item.querySelector("img");
     if (!image || !lightbox || !largeImage) return;
     largeImage.src = image.src;
     largeImage.alt = image.alt;
@@ -58,7 +58,7 @@
   };
 
   galleryItems.forEach((item) => {
-    item.addEventListener("click", () => openGalleryPreview(item));
+    item.addEventListener("click", (event) => openGalleryPreview(item, event.target.closest("img")));
     item.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
