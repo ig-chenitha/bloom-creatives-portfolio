@@ -35,7 +35,7 @@
       filterButtons.forEach((item) => item.classList.toggle("active", item === button));
       let visibleCount = 0;
       galleryItems.forEach((item) => {
-        const visible = button.dataset.filter === "all" || item.dataset.category === button.dataset.filter;
+        const visible = button.dataset.filter === "all" ? !item.classList.contains("business-card-item") : item.dataset.category === button.dataset.filter;
         item.hidden = !visible;
         if (visible) visibleCount++;
       });
