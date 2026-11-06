@@ -699,3 +699,33 @@ body.gallery-page .business-card-pair img{
   max-height:none!important;
   object-fit:contain!important;
 }
+
+
+/* FINAL GALLERY FIX: prevent every card from stretching to the tallest card in its row */
+body.gallery-page #galleryGrid{
+  display:grid!important;
+  align-items:start!important;
+  align-content:start!important;
+  grid-auto-rows:max-content!important;
+}
+body.gallery-page #galleryGrid > .item{
+  align-self:start!important;
+  height:max-content!important;
+  min-height:0!important;
+}
+body.gallery-page #galleryGrid > .item .media{
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:auto!important;
+}
+body.gallery-page #galleryGrid > .item .media img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+}
+body.gallery-page #galleryGrid > .item .meta{
+  height:auto!important;
+  min-height:0!important;
+}
