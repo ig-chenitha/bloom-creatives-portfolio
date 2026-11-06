@@ -648,3 +648,8 @@ body.gallery-page .lightbox button{
   .contact-page .inquiry-form select,.contact-page .inquiry-form textarea,
   .contact-page .inquiry-submit{transition:none}
 }
+
+
+/* Keep gallery artwork in two side-by-side columns on every screen size */
+body.gallery-page .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+@media(max-width:520px){body.gallery-page .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
