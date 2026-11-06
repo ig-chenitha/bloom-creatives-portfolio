@@ -653,3 +653,10 @@ body.gallery-page .lightbox button{
 /* Keep gallery artwork in two side-by-side columns on every screen size */
 body.gallery-page .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 @media(max-width:520px){body.gallery-page .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+
+
+/* Gallery poster sizing: smaller cards on desktop, two-up on mobile */
+body.gallery-page .grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px}
+body.gallery-page .media{aspect-ratio:4/5;max-height:420px}
+@media(max-width:800px){body.gallery-page .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}body.gallery-page .media{max-height:340px}}
+@media(max-width:520px){body.gallery-page .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}body.gallery-page .media{max-height:260px}}
