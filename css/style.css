@@ -678,3 +678,24 @@ body.gallery-page .media img{
   max-height:none!important;
   object-fit:contain!important;
 }
+
+
+/* Show the CHAEN front and back together in one compact gallery card */
+body.gallery-page .grid{align-items:start!important}
+body.gallery-page .business-card-pair{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0;
+  align-items:stretch;
+  aspect-ratio:auto!important;
+  height:auto!important;
+  max-height:none!important;
+  background:#080808!important;
+}
+body.gallery-page .business-card-pair img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+}
