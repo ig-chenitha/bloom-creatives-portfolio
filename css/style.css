@@ -660,3 +660,21 @@ body.gallery-page .grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;
 body.gallery-page .media{aspect-ratio:4/5;max-height:420px}
 @media(max-width:800px){body.gallery-page .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}body.gallery-page .media{max-height:340px}}
 @media(max-width:520px){body.gallery-page .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}body.gallery-page .media{max-height:260px}}
+
+
+/* Gallery: remove side gaps around portrait posters by using each image's natural ratio */
+body.gallery-page .media{
+  aspect-ratio:auto!important;
+  height:auto!important;
+  max-height:none!important;
+  display:block!important;
+  background:transparent!important;
+  overflow:hidden;
+}
+body.gallery-page .media img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+}
