@@ -848,3 +848,20 @@ body.gallery-page #galleryGrid > .item[hidden]{
 @media(max-width:520px){
   #work .work-grid{gap:10px!important}
 }
+
+
+/* Apply the portfolio's Outfit typeface consistently to every button */
+button,
+button *,
+.button,
+.button *,
+.nav-cta,
+.nav-cta *,
+.filter,
+.filter *,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+[role="button"]{
+  font-family:"Outfit",sans-serif !important;
+}
