@@ -841,3 +841,8 @@ body.gallery-page #galleryGrid > .item[hidden]{
   #work .project-info{padding:10px 9px;display:block}
   #work .project-index{display:block;margin-top:8px}
 }
+
+
+/* Centered full-gallery link beneath Featured Work */
+.featured-gallery-action{display:flex;justify-content:center;margin-top:34px}
+.featured-gallery-link{min-width:190px}
