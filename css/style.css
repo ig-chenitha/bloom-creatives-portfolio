@@ -881,3 +881,37 @@ input[type="reset"],
 @media(max-width:800px){
   .about-portrait{height:220px;max-width:min(100%,230px)}
 }
+
+
+/* About portrait: place the cutout above the existing headline without covering it */
+#about .about-visual{
+  min-height:520px;
+}
+#about .about-visual .about-portrait{
+  position:absolute;
+  top:58px;
+  left:50%;
+  transform:translateX(-50%);
+  display:block;
+  width:auto;
+  height:265px;
+  max-width:82%;
+  object-fit:contain;
+  object-position:center bottom;
+  align-self:auto;
+  z-index:3;
+  pointer-events:none;
+}
+#about .about-visual strong{
+  position:relative;
+  z-index:4;
+  margin-top:auto;
+}
+#about .about-visual > span:last-child{
+  position:relative;
+  z-index:4;
+}
+@media(max-width:800px){
+  #about .about-visual{min-height:440px}
+  #about .about-visual .about-portrait{height:230px;top:48px;max-width:78%}
+}
