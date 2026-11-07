@@ -780,3 +780,8 @@ body.gallery-page .business-card-item .meta{
 @media(max-width:520px){
   body.gallery-page .business-card-item .meta{padding:10px!important}
 }
+
+/* Ensure category filters can hide masonry gallery cards */
+body.gallery-page #galleryGrid > .item[hidden]{
+  display:none!important;
+}
