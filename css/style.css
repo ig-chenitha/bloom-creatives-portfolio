@@ -984,3 +984,17 @@ input[type="reset"],
   color:#ff8a50;
   text-shadow:0 2px 10px rgba(0,0,0,.9);
 }
+
+/* About portrait typography — monochrome palette */
+#about .about-visual > span:first-child{
+  color:#bdbdbd;
+  text-shadow:0 2px 12px rgba(0,0,0,.85);
+}
+#about .about-visual strong{
+  color:#ffffff;
+  text-shadow:0 3px 18px rgba(0,0,0,.72);
+}
+#about .about-visual > span:last-child{
+  color:#d0d0d0;
+  text-shadow:0 2px 10px rgba(0,0,0,.9);
+}
