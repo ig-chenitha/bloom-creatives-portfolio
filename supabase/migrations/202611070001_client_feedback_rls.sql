@@ -17,6 +17,11 @@ grant select on public.client_feedback to anon, authenticated;
 grant insert on public.client_feedback to anon;
 grant update on public.client_feedback to authenticated;
 
+-- Remove permissive policies from the original baseline migration.
+-- Multiple permissive policies are OR-ed together, so the old insert policy
+-- must be removed to prevent visitors setting approved=true.
+drop policy if exists "Public can submit feedback" on public.client_feedback;
+drop policy if exists "Public can read approved feedback" on public.client_feedback;
 drop policy if exists "Anyone can read approved feedback" on public.client_feedback;
 create policy "Anyone can read approved feedback"
 on public.client_feedback for select
