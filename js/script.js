@@ -101,3 +101,27 @@
     window.location.href = "mailto:vyntro.creatives@gmail.com?subject=" + subject + "&body=" + body;
   });
 })();
+
+
+/* Homepage-only subtle pointer depth for the decorative 3D hero */
+(() => {
+  const scene = document.querySelector(".hero-3d-scene");
+  const hero = document.querySelector(".hero");
+  if (!scene || !hero || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  let frame = 0;
+  hero.addEventListener("pointermove", (event) => {
+    if (event.pointerType === "touch") return;
+    cancelAnimationFrame(frame);
+    const rect = hero.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width - 0.5;
+    const y = (event.clientY - rect.top) / rect.height - 0.5;
+    frame = requestAnimationFrame(() => {
+      scene.style.marginLeft = (x * -16) + "px";
+      scene.style.marginTop = (y * -12) + "px";
+    });
+  }, { passive: true });
+  hero.addEventListener("pointerleave", () => {
+    scene.style.marginLeft = "0";
+    scene.style.marginTop = "0";
+  }, { passive: true });
+})();
