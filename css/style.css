@@ -807,3 +807,37 @@ body.gallery-page #galleryGrid > .item[hidden]{
 @keyframes heroShardFloat{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(8px,-18px,20px) rotate(35deg)}}
 @media(max-width:760px){.hero-3d-scene{width:min(78vw,390px);right:-16%;top:53%;opacity:.45}.hero{overflow:hidden}.hero h1,.hero .hero-bottom{position:relative;z-index:3}}
 @media(prefers-reduced-motion:reduce){.hero-3d-scene *{animation:none!important;transition:none!important}}
+
+
+/* Featured Work: four larger poster previews in one desktop row */
+#work .work-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:16px!important;
+  align-items:start;
+}
+#work .project{min-width:0}
+#work .project-media{
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:3/4;
+  padding:10px;
+}
+#work .project-media img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+#work .project-info{padding:15px 13px;align-items:flex-start}
+#work .project-info strong{font-size:13px;line-height:1.4}
+#work .project-info small{font-size:10px;line-height:1.5}
+#work .project-index{white-space:nowrap;font-size:10px}
+@media(max-width:800px){
+  #work .work-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important}
+  #work .project-media{padding:8px}
+}
+@media(max-width:520px){
+  #work .work-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  #work .project-media{padding:5px}
+  #work .project-info{padding:10px 9px;display:block}
+  #work .project-index{display:block;margin-top:8px}
+}
