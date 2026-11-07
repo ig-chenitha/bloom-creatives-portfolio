@@ -785,3 +785,42 @@ body.gallery-page .business-card-item .meta{
 body.gallery-page #galleryGrid > .item[hidden]{
   display:none!important;
 }
+
+/* Featured Work: four smaller posters in one neat desktop row */
+#work .work-grid{
+  width:100%;
+  max-width:980px;
+  margin-left:auto;
+  margin-right:auto;
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:14px!important;
+  align-items:start!important;
+}
+#work .project{min-width:0}
+#work .project-media{
+  width:100%;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:3/4;
+  padding:6px;
+}
+#work .project-media img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+#work .project-info{padding:10px 9px}
+#work .project-info strong{font-size:12px;line-height:1.35}
+#work .project-info small{font-size:9px;line-height:1.4}
+#work .project-index{font-size:9px;white-space:nowrap}
+@media(max-width:760px){
+  #work .work-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;max-width:560px;gap:12px!important}
+}
+@media(max-width:520px){
+  #work .work-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+  #work .project-media{padding:4px}
+  #work .project-info{padding:8px 7px}
+  #work .project-info strong{font-size:11px}
+}
