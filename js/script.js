@@ -32,13 +32,20 @@
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
+      const selectedCategory = button.dataset.filter;
       filterButtons.forEach((item) => item.classList.toggle("active", item === button));
+
       let visibleCount = 0;
       galleryItems.forEach((item) => {
-        const visible = button.dataset.filter === "all" ? !item.matches(".business-card-item, .clothing-tag-item") : item.dataset.category === button.dataset.filter;
+        const visible =
+          selectedCategory === "all" ||
+          item.dataset.category === selectedCategory;
+
         item.hidden = !visible;
+        item.style.setProperty("display", visible ? "inline-block" : "none", "important");
         if (visible) visibleCount++;
       });
+
       if (emptyState) emptyState.style.display = visibleCount ? "none" : "block";
     });
   });
