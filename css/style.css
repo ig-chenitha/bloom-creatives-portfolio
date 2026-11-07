@@ -915,3 +915,58 @@ input[type="reset"],
   #about .about-visual{min-height:440px}
   #about .about-visual .about-portrait{height:230px;top:48px;max-width:78%}
 }
+
+
+/* About section — portrait fills the visual, headline overlays its lower edge */
+#about .about-visual{
+  position:relative;
+  min-height:520px;
+  padding:0;
+  border:0;
+  background:transparent;
+  overflow:hidden;
+}
+#about .about-visual:before{
+  display:none;
+}
+#about .about-visual .about-portrait{
+  position:absolute;
+  inset:0;
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:100%;
+  object-fit:contain;
+  object-position:center bottom;
+  transform:none;
+  z-index:1;
+  pointer-events:none;
+}
+#about .about-visual > span:first-child{
+  position:absolute;
+  top:30px;
+  left:30px;
+  z-index:3;
+}
+#about .about-visual strong{
+  position:absolute;
+  left:30px;
+  bottom:52px;
+  margin:0;
+  font-size:clamp(48px,6vw,76px);
+  line-height:.9;
+  z-index:2;
+}
+#about .about-visual > span:last-child{
+  position:absolute;
+  left:30px;
+  bottom:22px;
+  z-index:3;
+}
+@media(max-width:800px){
+  #about .about-visual{min-height:440px}
+  #about .about-visual .about-portrait{height:100%;max-width:100%}
+  #about .about-visual strong{left:22px;bottom:48px;font-size:clamp(44px,9vw,64px)}
+  #about .about-visual > span:first-child{left:22px;top:24px}
+  #about .about-visual > span:last-child{left:22px;bottom:18px}
+}
