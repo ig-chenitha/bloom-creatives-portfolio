@@ -90,7 +90,7 @@
     event.preventDefault();
     if (!inquiryForm.reportValidity()) return;
     const data = new FormData(inquiryForm);
-    const subject = encodeURIComponent("New project inquiry — VYNTRO CREATIVES");
+    const subject = encodeURIComponent("New project inquiry — BLOOM CREATIVES");
     const body = encodeURIComponent(
       "Name: " + data.get("name") + "\n" +
       "Email: " + data.get("email") + "\n" +
@@ -98,6 +98,6 @@
       "Budget: " + (data.get("budget") || "Not specified") + "\n\n" +
       "Project brief:\n" + data.get("brief")
     );
-    window.location.href = "mailto:vyntro.creatives@gmail.com?subject=" + subject + "&body=" + body;
+    window.location.href = "mailto:bloom.crativesss@gmail.com?subject=" + subject + "&body=" + body;
   });
 })();
