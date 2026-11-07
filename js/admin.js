@@ -74,9 +74,7 @@
       const actions = document.createElement("div"); actions.className = "actions";
       const toggle = document.createElement("button"); toggle.className = "btn"; toggle.textContent = row.approved ? "Unpublish" : "Approve & publish";
       toggle.addEventListener("click", () => moderate(row, !row.approved, toggle));
-      const remove = document.createElement("button"); remove.className = "btn secondary danger"; remove.textContent = "Delete";
-      remove.addEventListener("click", () => removeReview(row, remove));
-      actions.append(toggle, remove); card.append(head, body, state, actions); host.append(card);
+      actions.append(toggle); card.append(head, body, state, actions); host.append(card);
     });
   }
 
@@ -88,14 +86,6 @@
     } catch (error) { message("dashboardStatus", error.message); button.disabled = false; }
   }
 
-  async function removeReview(row, button) {
-    if (!window.confirm("Permanently delete this feedback from the database?")) return;
-    button.disabled = true;
-    try {
-      await request("/rest/v1/client_feedback?id=eq." + encodeURIComponent(row.id), { method: "DELETE", headers: { Prefer: "return=minimal" } });
-      rows = rows.filter((item) => item.id !== row.id); render(); message("dashboardStatus", "Review deleted.");
-    } catch (error) { message("dashboardStatus", error.message); button.disabled = false; }
-  }
 
   document.querySelectorAll("[data-filter]").forEach((button) => button.addEventListener("click", () => {
     filter = button.dataset.filter;
