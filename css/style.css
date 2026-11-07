@@ -865,3 +865,19 @@ input[type="reset"],
 [role="button"]{
   font-family:"Outfit",sans-serif !important;
 }
+
+
+/* About section portrait — preserve the existing copy and visual styling */
+.about-portrait{
+  display:block;
+  width:auto;
+  max-width:min(100%,260px);
+  height:245px;
+  object-fit:contain;
+  object-position:center bottom;
+  align-self:center;
+  z-index:1;
+}
+@media(max-width:800px){
+  .about-portrait{height:220px;max-width:min(100%,230px)}
+}
