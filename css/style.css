@@ -1012,3 +1012,11 @@ input[type="reset"],
   color:#000000;
   text-shadow:none;
 }
+
+/* About portrait typography — all three labels white */
+#about .about-visual > span:first-child,
+#about .about-visual strong,
+#about .about-visual > span:last-child{
+  color:#ffffff;
+  text-shadow:0 2px 12px rgba(0,0,0,.75);
+}
