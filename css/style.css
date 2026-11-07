@@ -729,3 +729,29 @@ body.gallery-page #galleryGrid > .item .meta{
   height:auto!important;
   min-height:0!important;
 }
+
+/* Gallery spacing: masonry-style columns keep cards close without large empty row gaps */
+body.gallery-page #galleryGrid{
+  display:block!important;
+  column-count:3;
+  column-gap:18px;
+  align-items:initial!important;
+}
+body.gallery-page #galleryGrid > .item{
+  display:inline-block;
+  width:100%;
+  margin:0 0 18px;
+  break-inside:avoid;
+  vertical-align:top;
+}
+@media(max-width:800px){
+  body.gallery-page #galleryGrid{column-count:2;column-gap:14px}
+  body.gallery-page #galleryGrid > .item{margin-bottom:14px}
+}
+@media(max-width:520px){
+  body.gallery-page #galleryGrid{column-count:2;column-gap:10px}
+  body.gallery-page #galleryGrid > .item{margin-bottom:10px}
+  body.gallery-page .meta{padding:11px 10px}
+  body.gallery-page .meta strong{font-size:12px}
+  body.gallery-page .meta span{font-size:10px;line-height:1.5}
+}
