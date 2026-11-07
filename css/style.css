@@ -998,3 +998,17 @@ input[type="reset"],
   color:#d0d0d0;
   text-shadow:0 2px 10px rgba(0,0,0,.9);
 }
+
+/* About portrait typography — black text as requested */
+#about .about-visual > span:first-child{
+  color:#000000;
+  text-shadow:none;
+}
+#about .about-visual strong{
+  color:#000000;
+  text-shadow:none;
+}
+#about .about-visual > span:last-child{
+  color:#000000;
+  text-shadow:none;
+}
