@@ -1,7 +1,7 @@
 /* BLOOM CREATIVES — lightweight scroll reveals and image loading helpers */
 (() => {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const selectors = [".section-head",".about-visual",".about-copy",".service",".project",".gallery-tile",".step",".contact-panel",".feedback-form-panel",".feedback-reviews-panel",".intro",".filters",".item",".contact-form",".skills-card","footer .foot"];
+  const selectors = [".section-head",".about-visual",".about-copy",".service",".project",".gallery-tile",".step",".contact-panel",".feedback-form-panel",".feedback-reviews-panel",".intro",".filters",".item",".contact-form",".skills-card",".skills-section",".skills-page-note",".contact-page-hero",".contact-page-form-section","footer .foot"];
   document.querySelectorAll(selectors.join(",")).forEach(el => el.setAttribute("data-reveal","up"));
   document.querySelectorAll(".services,.work-grid,.gallery-grid,.process,.grid,.skills-grid").forEach(el => {
     el.classList.add("reveal-stagger"); el.setAttribute("data-reveal","up");
