@@ -1020,3 +1020,23 @@ input[type="reset"],
   color:#ffffff;
   text-shadow:0 2px 12px rgba(0,0,0,.75);
 }
+
+/* Mobile homepage hero: remove oversized empty space above and below the intro */
+@media (max-width: 520px) {
+  body:not(.gallery-page) .hero {
+    min-height: 0;
+    padding: 112px 0 52px;
+    align-items: flex-start;
+  }
+  body:not(.gallery-page) .hero > .wrap {
+    width: min(var(--max), 91%);
+  }
+  body:not(.gallery-page) .hero h1 {
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+  body:not(.gallery-page) .hero-copy {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+}
