@@ -1040,3 +1040,25 @@ input[type="reset"],
     margin-bottom: 18px;
   }
 }
+
+
+/* Lightweight motion system: GPU-friendly transforms, no scroll-jank */
+@media (prefers-reduced-motion: no-preference) {
+  .motion-ready [data-reveal] { opacity:0; transform:translate3d(0,18px,0); transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1); }
+  .motion-ready [data-reveal].is-visible { opacity:1; transform:translate3d(0,0,0); }
+  .motion-ready [data-reveal="from-left"] { transform:translate3d(-18px,0,0); }
+  .motion-ready [data-reveal="from-right"] { transform:translate3d(18px,0,0); }
+  .motion-ready [data-reveal].is-visible[data-reveal="from-left"],
+  .motion-ready [data-reveal].is-visible[data-reveal="from-right"] { transform:translate3d(0,0,0); }
+  .motion-ready .reveal-stagger > * { opacity:0; transform:translate3d(0,14px,0); transition:opacity .45s ease,transform .45s cubic-bezier(.2,.7,.2,1); }
+  .motion-ready .reveal-stagger.is-visible > * { opacity:1; transform:translate3d(0,0,0); }
+  .motion-ready .reveal-stagger.is-visible > *:nth-child(2) { transition-delay:.06s; }
+  .motion-ready .reveal-stagger.is-visible > *:nth-child(3) { transition-delay:.12s; }
+  .motion-ready .reveal-stagger.is-visible > *:nth-child(4) { transition-delay:.18s; }
+  .motion-ready .reveal-stagger.is-visible > *:nth-child(n+5) { transition-delay:.22s; }
+  .button,.nav-cta,.menu-toggle,.filter { transition:transform .2s ease,background-color .2s ease,color .2s ease,border-color .2s ease; }
+  .button:active,.nav-cta:active { transform:scale(.97); }
+}
+@media (prefers-reduced-motion: reduce) { [data-reveal],.reveal-stagger > * { opacity:1!important;transform:none!important;transition:none!important; } }
+.gallery-page .media { contain:layout paint; }
+.project-media,.media { background-color:#111; }
