@@ -28,11 +28,10 @@
 <section class="contact-page-form-section"><div class="wrap">
 <div class="inquiry-layout">
   <div class="inquiry-intro"><span class="kicker">Start something good</span><h3>Tell me about<br>your project.</h3><p>Share a few details and send your project inquiry directly to BLOOM CREATIVES. You’ll see a confirmation when it has been received.</p></div>
-  <form id="projectInquiryForm" class="inquiry-form" action="https://formsubmit.co/bloom.creativesss@gmail.com" method="POST">
-    <input type="hidden" name="_subject" value="New project inquiry — BLOOM CREATIVES">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_url" value="https://bloomcreatives-portfolio.pages.dev/contact.html">
-    <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
+  <form id="projectInquiryForm" class="inquiry-form" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="ef6d1e80-7bfc-4284-93af-6a9d843cd2fc">
+    <input type="hidden" name="subject" value="New project inquiry — BLOOM CREATIVES">
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
     <div class="form-row"><label>Your name<input name="name" type="text" placeholder="Name" autocomplete="name" maxlength="100" required></label><label>Email address<input name="email" type="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required></label></div>
     <div class="form-row"><label>Project type<select name="projectType" required><option value="">Choose a service</option><option>Brand identity</option><option>Social media design</option><option>Event Poster design</option><option>Other Poster design</option><option>Advertising design</option><option>Web design</option><option>Other</option></select></label><label>Estimated budget<input name="budget" type="text" placeholder="e.g. LKR 1,000 – 2,000" maxlength="100"></label></div>
     <label>Project brief<textarea name="brief" rows="5" placeholder="What do you need designed? Tell me about your idea, timeline and goals..." minlength="10" maxlength="2000" required></textarea></label>
@@ -45,7 +44,7 @@
 </main>
 <footer><div class="wrap foot"><a href="index.html" aria-label="Back to portfolio"><img src="assets/bloom-logo.svg?v=3" alt="BLOOM"></a><span>Chenitha Kodithuwakku · Freelance Graphic Designer</span><span>© 2026 BLOOM CREATIVES · <a href="index.html">Back to portfolio ↗</a></span></div></footer>
 <script src="js/script.js" defer></script>
-<script src="js/contact.js?v=2" defer></script>
+<script src="js/contact.js?v=3" defer></script>
 <script src="js/menu.js" defer></script>
 <script src="js/reveal.js?v=skills-gallery-contact-2" defer></script>
 </body></html>
