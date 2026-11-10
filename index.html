@@ -10,14 +10,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css?v=motion-image-speed-1">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZBWW6RNK6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-HZBWW6RNK6');
-</script>
+<style>
+#analyticsConsent[hidden]{display:none}
+#analyticsConsent{position:fixed;z-index:10000;left:1rem;right:1rem;bottom:1rem;margin:auto;max-width:760px;padding:1.15rem 1.25rem;background:#171717;color:#f5f5f5;border:1px solid #444;border-radius:14px;box-shadow:0 16px 50px #0009;display:flex;gap:1rem;align-items:center;justify-content:space-between}
+#analyticsConsent p{margin:0;color:#ccc;font-size:.9rem;line-height:1.5}
+#analyticsConsent a{color:#fff;text-decoration:underline}
+#analyticsConsent .consent-actions{display:flex;gap:.5rem;flex-shrink:0}
+#analyticsConsent button{border:1px solid #777;border-radius:999px;padding:.65rem .9rem;background:transparent;color:#fff;cursor:pointer;font:inherit}
+#analyticsConsent button[data-consent="accept"]{background:#fff;color:#111;border-color:#fff}
+@media(max-width:600px){#analyticsConsent{display:block}#analyticsConsent .consent-actions{margin-top:.9rem}}
+</style>
 </head>
 <body>
 <header id="header"><div class="wrap nav">
@@ -63,6 +65,8 @@
 <footer><div class="wrap foot"><a href="#home" aria-label="Back to top"><img src="assets/bloom-logo.svg?v=3" alt="BLOOM"></a><span>Chenitha Kodithuwakku · Freelance Graphic Designer</span><span>© 2026 BLOOM CREATIVES · Independent creative portfolio · <a href="privacy.html">Privacy Policy</a></span></div></footer>
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Portfolio image preview" onclick="if(event.target===this)hideImage()"><button type="button" aria-label="Close image preview" onclick="hideImage()">×</button><img id="largeImage" alt="Selected portfolio design"></div>
 <script src="js/script.js" defer></script>
+<div id="analyticsConsent" role="dialog" aria-label="Analytics preferences" aria-live="polite" hidden><p>This website uses optional Google Analytics to understand site visits. You can accept or reject analytics. Read the <a href="privacy.html">Privacy Policy</a>.</p><div class="consent-actions"><button type="button" data-consent="reject">Reject</button><button type="button" data-consent="accept">Accept</button></div></div>
+<script src="js/analytics-consent.js" defer></script>
 <script src="js/feedback.js" defer></script>
 <script src="js/menu.js" defer></script>
 <script src="js/reveal.js?v=1" defer></script>
