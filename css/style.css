@@ -1156,23 +1156,11 @@ body.gallery-page .lightbox button{
 }
 
 
-/* Subtle BLOOM CREATIVES corner watermark */
-.gallery-page .media,
-.gallery-page .lightbox-artwork{position:relative}
-.gallery-page .media::after,
-.gallery-page .lightbox-artwork::after{
-  content:"";
-  position:absolute;right:12px;bottom:12px;z-index:3;
-  width:clamp(58px,18%,104px);aspect-ratio:2048/323;
-  pointer-events:none;
-  background-image:url("../assets/bloom-watermark.svg?v=1");
-  background-repeat:no-repeat;background-position:center;background-size:contain;
-  opacity:.34;
-}
-.gallery-page .lightbox-artwork::after{
-  right:16px;bottom:16px;width:clamp(72px,17%,132px);opacity:.32;
-}
+/* Gallery image-save deterrents (not screenshot-proof) */
 .gallery-page .media img,
 .gallery-page .lightbox-artwork img{
-  -webkit-user-drag:none;user-select:none;-webkit-user-select:none;
+  -webkit-user-drag:none;
+  -webkit-touch-callout:none;
+  user-select:none;
+  -webkit-user-select:none;
 }
