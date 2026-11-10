@@ -1187,3 +1187,8 @@ body.gallery-page .lightbox button{
 .project-detail-link{display:inline-flex;margin-top:28px;padding:13px 18px;border:1px solid rgba(255,255,255,.55);border-radius:12px;color:#fff;text-decoration:none;font-size:11px;letter-spacing:.08em;transition:background .2s ease,color .2s ease}
 .project-detail-link:hover{background:#fff;color:#080808}
 @media(max-width:760px){.project-detail-wrap{padding-top:28px}.project-heading{padding:58px 0 32px}.project-story-grid{grid-template-columns:1fr}.project-story-card{min-height:0}.project-footer-actions{align-items:flex-start;flex-direction:column}.project-artwork-section{margin-bottom:46px}}
+
+/* Force every project detail category label to white on every project page */
+.project-detail-page .kicker,
+.project-detail-page .project-heading .kicker,
+.project-detail-page #projectCategory{color:#fff!important;}
