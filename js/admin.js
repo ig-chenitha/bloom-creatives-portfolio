@@ -2,7 +2,7 @@
 (() => {
   const API = "https://zkxtlbvgurziniicpdyg.supabase.co";
   const KEY = "sb_publishable_Q3IBH3JE1e6fGoqFQNUoig_FLufny0b";
-  const OWNER = "chenithakodithuwakku999@gmail.com";
+  const OWNER = "bloom.creativesss@gmail.com";
   let accessToken = "";
   let rows = [];
   let filter = "pending";
