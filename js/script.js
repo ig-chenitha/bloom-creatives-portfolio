@@ -29,6 +29,7 @@
   const lightbox = document.getElementById("lightbox");
   const largeImage = document.getElementById("largeImage");
   const closeButton = document.getElementById("closePreview");
+  const projectDetailsLink = document.getElementById("openProjectDetails");
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -58,6 +59,7 @@
     const title = item.querySelector(".meta strong")?.textContent?.trim() || "Selected Poster Design";
     const detail = item.dataset.description || item.querySelector(".meta span")?.textContent?.trim() || "Creative visual design";
     const category = item.dataset.category || "visual";
+    if (projectDetailsLink) projectDetailsLink.href = "project.html?id=" + encodeURIComponent(item.dataset.project || "");
     const categoryNames = {
       event: "EVENT POSTER",
       promotion: "PROMOTION POSTER",
