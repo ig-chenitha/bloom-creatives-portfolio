@@ -1248,3 +1248,12 @@ body.gallery-page .lightbox-description.lightbox-button-only .project-detail-lin
     padding:4px 0 12px;
   }
 }
+
+/* Artwork interaction deterrents on project detail pages */
+.project-detail-page #projectArtwork,
+.project-detail-page .project-artwork-frame img{
+  -webkit-user-drag:none;
+  -webkit-touch-callout:none;
+  user-select:none;
+  -webkit-user-select:none;
+}
