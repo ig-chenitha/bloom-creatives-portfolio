@@ -1230,3 +1230,21 @@ body.gallery-page .lightbox button{
 @media(min-width:701px){
  .project-layout{grid-template-columns:minmax(0,1fr) minmax(340px,.88fr)!important;gap:clamp(24px,3vw,48px)!important}
 }
+
+/* Gallery preview: keep only the project-details action beside the artwork */
+body.gallery-page .lightbox-description.lightbox-button-only{
+  justify-content:center;
+  align-items:flex-start;
+  padding:0;
+  min-width:0;
+}
+body.gallery-page .lightbox-description.lightbox-button-only .project-detail-link{
+  margin-top:0;
+  border-radius:12px;
+}
+@media(max-width:700px){
+  body.gallery-page .lightbox-description.lightbox-button-only{
+    order:2;
+    padding:4px 0 12px;
+  }
+}
