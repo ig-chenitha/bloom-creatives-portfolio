@@ -1220,3 +1220,13 @@ body.gallery-page .lightbox button{
  .project-info-column{grid-row:2}
  .project-story-grid{grid-template-columns:1fr}
 }
+
+/* Final project detail spacing and bottom gallery navigation */
+.project-detail-wrap{padding-top:14px!important}
+.project-layout{margin-top:4px!important}
+.project-heading{padding-top:4px!important}
+.project-back-bottom{margin-top:8px;display:inline-flex}
+.project-footer-actions{margin-top:30px!important;padding-top:20px!important}
+@media(min-width:701px){
+ .project-layout{grid-template-columns:minmax(0,1fr) minmax(340px,.88fr)!important;gap:clamp(24px,3vw,48px)!important}
+}
