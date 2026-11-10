@@ -113,6 +113,6 @@
       "Budget: " + (data.get("budget") || "Not specified") + "\n\n" +
       "Project brief:\n" + data.get("brief")
     );
-    window.location.href = "mailto:bloom.crativesss@gmail.com?subject=" + subject + "&body=" + body;
+    window.location.href = "mailto:bloom.creativesss@gmail.com?subject=" + subject + "&body=" + body;
   });
 })();
