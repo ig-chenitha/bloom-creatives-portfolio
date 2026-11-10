@@ -56,7 +56,7 @@
     largeImage.src = image.src;
     largeImage.alt = image.alt;
     const title = item.querySelector(".meta strong")?.textContent?.trim() || "Selected Poster Design";
-    const detail = item.querySelector(".meta span")?.textContent?.trim() || "Creative visual design";
+    const detail = item.dataset.description || item.querySelector(".meta span")?.textContent?.trim() || "Creative visual design";
     const category = item.dataset.category || "visual";
     const categoryNames = {
       event: "EVENT POSTER",
@@ -69,7 +69,7 @@
     const previewCategory = document.getElementById("previewCategory");
     if (previewTitle) previewTitle.textContent = title;
     if (previewCategory) previewCategory.textContent = "BLOOM CREATIVES / " + (categoryNames[category] || "SELECTED WORK");
-    if (description) description.textContent = detail + ". A visual concept developed with a focus on composition, typography and a clear creative message.";
+    if (description) description.textContent = detail;
     lightbox.classList.add("open");
     document.body.style.overflow = "hidden";
   };
