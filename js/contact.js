@@ -16,7 +16,7 @@
 
     try {
       const data = Object.fromEntries(new FormData(form).entries());
-      const response = await fetch('https://formsubmit.co/ajax/04a40bcbb2601bcc3ddd023a40b3bf8b', {
+      const response = await fetch('https://formsubmit.co/ajax/bloom.creativesss@gmail.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(data)
