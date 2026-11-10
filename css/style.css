@@ -1062,3 +1062,95 @@ input[type="reset"],
 @media (prefers-reduced-motion: reduce) { [data-reveal],.reveal-stagger > * { opacity:1!important;transform:none!important;transition:none!important; } }
 .gallery-page .media { contain:layout paint; }
 .project-media,.media { background-color:#111; }
+
+
+/* Gallery artwork preview: editorial description on the left, original artwork on the right */
+body.gallery-page .lightbox{
+  padding:clamp(22px,4vw,64px);
+  background:rgba(0,0,0,.96);
+}
+body.gallery-page .lightbox-content{
+  width:min(1120px,100%);
+  min-height:min(680px,82vh);
+  display:grid;
+  grid-template-columns:minmax(250px,.78fr) minmax(0,1.22fr);
+  align-items:center;
+  gap:clamp(30px,6vw,90px);
+  margin:auto;
+}
+body.gallery-page .lightbox-description{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  padding:clamp(12px,2vw,28px) 0;
+  color:#f5f5f2;
+  text-align:left;
+}
+body.gallery-page .lightbox-eyebrow{
+  color:#a78bfa;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.22em;
+  line-height:1.7;
+  text-transform:uppercase;
+}
+body.gallery-page .lightbox-description h2{
+  max-width:430px;
+  margin:20px 0 16px;
+  font-family:"Space Grotesk",sans-serif;
+  font-size:clamp(30px,4vw,54px);
+  font-weight:600;
+  line-height:1.04;
+  letter-spacing:-.045em;
+}
+body.gallery-page .lightbox-description p{
+  max-width:370px;
+  margin:0;
+  color:#aaa;
+  font-size:14px;
+  line-height:1.9;
+}
+body.gallery-page .lightbox-index{
+  margin-top:38px;
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.16);
+  color:#777;
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:.2em;
+}
+body.gallery-page .lightbox-artwork{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  min-height:0;
+  height:min(78vh,760px);
+}
+body.gallery-page .lightbox-artwork img{
+  display:block;
+  max-width:100%;
+  max-height:100%;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+}
+body.gallery-page .lightbox button{
+  top:22px;
+  right:28px;
+}
+@media(max-width:700px){
+  body.gallery-page .lightbox{padding:72px 22px 24px;overflow-y:auto}
+  body.gallery-page .lightbox-content{
+    min-height:0;
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+  body.gallery-page .lightbox-description{padding:0;order:2}
+  body.gallery-page .lightbox-description h2{font-size:30px;margin:10px 0}
+  body.gallery-page .lightbox-description p{font-size:12px;line-height:1.65}
+  body.gallery-page .lightbox-index{margin-top:16px}
+  body.gallery-page .lightbox-artwork{height:auto;max-height:58vh;order:1}
+  body.gallery-page .lightbox-artwork img{max-height:58vh}
+}
