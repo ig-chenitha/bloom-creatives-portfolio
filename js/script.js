@@ -99,20 +99,4 @@
       closeGalleryPreview();
     }
   });
-
-  const inquiryForm = document.getElementById("projectInquiryForm");
-  inquiryForm?.addEventListener("submit", (event) => {
-    event.preventDefault();
-    if (!inquiryForm.reportValidity()) return;
-    const data = new FormData(inquiryForm);
-    const subject = encodeURIComponent("New project inquiry — BLOOM CREATIVES");
-    const body = encodeURIComponent(
-      "Name: " + data.get("name") + "\n" +
-      "Email: " + data.get("email") + "\n" +
-      "Project type: " + data.get("projectType") + "\n" +
-      "Budget: " + (data.get("budget") || "Not specified") + "\n\n" +
-      "Project brief:\n" + data.get("brief")
-    );
-    window.location.href = "mailto:bloom.creativesss@gmail.com?subject=" + subject + "&body=" + body;
-  });
 })();
