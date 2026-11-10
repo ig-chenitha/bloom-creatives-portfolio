@@ -15,7 +15,12 @@
   }
 
   let choice = null;
-  try { choice = localStorage.getItem(storageKey); } catch (_) {}
+  try {
+    if (new URLSearchParams(window.location.search).get('analytics-settings') === '1') {
+      localStorage.removeItem(storageKey);
+    }
+    choice = localStorage.getItem(storageKey);
+  } catch (_) {}
   if (choice === 'accepted') loadAnalytics();
   if (!banner) return;
   if (!choice) banner.hidden = false;
