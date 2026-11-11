@@ -2730,3 +2730,41 @@ body.gallery-page main{
 @media(max-width:800px){
   body.gallery-page main{padding-top:16px!important}
 }
+
+
+/* Skills page spacing refinement — align content neatly under the shared navbar */
+body.skills-page main{
+  padding-top:0!important;
+}
+.skills-page #skills{
+  padding:34px 0 72px!important;
+}
+.skills-page #skills .section-head{
+  margin-bottom:32px!important;
+  gap:24px!important;
+}
+.skills-page #skills .skills-grid{
+  gap:14px!important;
+}
+.skills-page #skills .skill-card{
+  min-height:230px!important;
+  padding:24px!important;
+}
+.skills-page #skills .skill-card h3{
+  margin:28px 0 9px!important;
+}
+.skills-page #skills .skill-card p{
+  min-height:0!important;
+  margin-bottom:0!important;
+}
+.skills-page-note{
+  padding:48px 0 65px!important;
+}
+@media(max-width:800px){
+  body.skills-page main{padding-top:0!important}
+  .skills-page #skills{padding:28px 0 55px!important}
+  .skills-page #skills .section-head{margin-bottom:25px!important;gap:14px!important}
+  .skills-page #skills .skill-card{min-height:0!important;padding:22px!important}
+  .skills-page #skills .skill-card h3{margin:24px 0 9px!important}
+  .skills-page-note{padding:40px 0 52px!important}
+}
