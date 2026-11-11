@@ -2790,3 +2790,14 @@ body.skills-page main{
   body.skills-page main{padding-top:16px!important}
   .skills-page #skills{padding-top:0!important}
 }
+
+
+/* Exact Gallery-style gap below the shared navigation on Skills */
+body.skills-page main{padding-top:0!important}
+body.skills-page main #skills.skills-section{
+  margin-top:0!important;
+  padding-top:20px!important;
+}
+@media(max-width:800px){
+  body.skills-page main #skills.skills-section{padding-top:16px!important}
+}
