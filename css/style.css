@@ -2717,3 +2717,16 @@ body.contact-page main{padding-top:76px}
   body.gallery-page main{padding-top:66px!important}
   body.contact-page main{padding-top:66px}
 }
+
+
+/* Gallery: keep the shared compact header, but remove the oversized gap below it */
+body.gallery-page header{
+  position:sticky!important;
+  top:0!important;
+}
+body.gallery-page main{
+  padding-top:20px!important;
+}
+@media(max-width:800px){
+  body.gallery-page main{padding-top:16px!important}
+}
