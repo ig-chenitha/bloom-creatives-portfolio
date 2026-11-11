@@ -1703,3 +1703,45 @@ body.contact-page{
   .feedback-section .feedback-form-panel,.feedback-section .feedback-reviews-panel{border-color:rgba(35,139,255,.32)!important}
   .contact-page .inquiry-form{padding:22px}
 }
+
+
+/* CLIENT REVIEW CARD SPACING + TEXT WRAPPING FIX */
+.feedback-section .feedback-reviews-panel,
+.feedback-section .approved-reviews{
+  min-width:0;
+  width:100%;
+}
+.feedback-section .review-card{
+  display:block;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  box-sizing:border-box;
+  padding:18px 20px!important;
+  margin:0;
+  border-radius:14px;
+  overflow:hidden;
+}
+.feedback-section .review-card .review-stars{
+  display:block;
+  margin:0 0 10px;
+  line-height:1.5;
+  overflow-wrap:anywhere;
+}
+.feedback-section .review-card p{
+  display:block;
+  margin:0 0 12px;
+  max-width:100%;
+  line-height:1.8;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+.feedback-section .review-card strong{
+  display:block;
+  line-height:1.5;
+  overflow-wrap:anywhere;
+}
+@media(max-width:520px){
+  .feedback-section .review-card{padding:16px!important}
+}
