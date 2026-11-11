@@ -1286,3 +1286,112 @@ body.gallery-page .lightbox-description.lightbox-button-only .project-detail-lin
   }
 }
 /* Mobile lightbox rules above remain unchanged. */
+
+
+/* BLOOM CREATIVES — MIDNIGHT BLUE THEME */
+:root{
+  --bg:#080D18;
+  --panel:#182B46;
+  --panel2:#101D31;
+  --white:#FFFFFF;
+  --muted:#A8B6C8;
+  --line:rgba(168,199,232,.20);
+  --soft:#DCE8F5;
+}
+html,body{background-color:#080D18!important;color:#FFFFFF}
+body{background:linear-gradient(180deg,#080D18 0%,#0B1424 100%)!important}
+header.scrolled,
+body.gallery-page header{
+  background:rgba(8,13,24,.94)!important;
+  border-bottom-color:rgba(168,199,232,.20)!important;
+}
+.hero{
+  background:
+    radial-gradient(ellipse at 78% 48%,rgba(42,75,116,.48) 0,transparent 39%),
+    linear-gradient(120deg,#080D18 0%,#101D31 58%,#080D18 100%)!important;
+}
+.hero h1 span{color:#A8C7E8!important}
+.eyebrow,.kicker{color:#A8C7E8!important}
+.nav-links{color:#C5D3E4!important}
+.nav-links a:hover,.nav-links a.active,.socials a:hover{color:#A8C7E8!important}
+.nav-cta,.button{
+  background:#A8C7E8!important;
+  color:#080D18!important;
+  border-color:#A8C7E8!important;
+}
+.nav-cta:hover,.button:hover{
+  background:transparent!important;
+  color:#A8C7E8!important;
+  border-color:#A8C7E8!important;
+}
+.button.secondary{
+  background:transparent!important;
+  color:#DCE8F5!important;
+  border-color:rgba(168,199,232,.48)!important;
+}
+.button.secondary:hover{background:#A8C7E8!important;color:#080D18!important}
+.menu-toggle{color:#DCE8F5!important;border-color:rgba(168,199,232,.28)!important}
+.about-visual,
+.gallery-tile,
+.project,.item,
+.contact-panel,
+.project-story-card,
+.project-artwork-frame{
+  background:linear-gradient(145deg,rgba(24,43,70,.82),rgba(12,24,42,.94))!important;
+  border-color:rgba(168,199,232,.20)!important;
+}
+.service,.step{
+  border-color:rgba(168,199,232,.20)!important;
+}
+.project-media,.media{background:#101D31!important}
+.project-info{
+  background:linear-gradient(180deg,rgba(24,43,70,.78),rgba(8,13,24,.94))!important;
+}
+.project:hover,.item:hover,.gallery-tile:hover,
+.service:hover,.step:hover{
+  border-color:rgba(168,199,232,.55)!important;
+}
+.project-index,.gallery-tile span,.service small,.step b,
+.project-artwork-caption{color:#A8B6C8!important}
+.filters .filter{
+  background:rgba(24,43,70,.45)!important;
+  color:#C5D3E4!important;
+  border-color:rgba(168,199,232,.28)!important;
+}
+.filters .filter.active,.filters .filter:hover{
+  background:#A8C7E8!important;
+  color:#080D18!important;
+  border-color:#A8C7E8!important;
+}
+.project-back,.project-detail-link{
+  color:#DCE8F5!important;
+  border-color:rgba(168,199,232,.48)!important;
+}
+.project-back:hover{color:#A8C7E8!important}
+.project-detail-link:hover{background:#A8C7E8!important;color:#080D18!important}
+.project-heading .kicker,.project-detail-page .kicker,
+.project-detail-page #projectCategory{color:#A8C7E8!important}
+.project-story-card>span{color:#A8C7E8!important}
+.project-story-card h2{color:#FFFFFF!important}
+body.gallery-page .lightbox{
+  background:rgba(5,10,19,.97)!important;
+}
+body.gallery-page .lightbox-eyebrow{color:#A8C7E8!important}
+.lightbox{background:rgba(5,10,19,.96)!important}
+.lightbox button{color:#DCE8F5!important}
+footer{border-top-color:rgba(168,199,232,.20)!important}
+::selection{background:#A8C7E8!important;color:#080D18!important}
+:focus-visible{outline-color:#A8C7E8!important}
+.project:focus-visible,.item:focus-visible{outline-color:#A8C7E8!important}
+@media(max-width:800px){
+  header .nav-links.open{
+    background:linear-gradient(145deg,rgba(24,43,70,.94),rgba(8,13,24,.94))!important;
+    border-color:rgba(168,199,232,.28)!important;
+  }
+  header .nav-links.open a{color:#DCE8F5!important}
+  header .nav-links.open a:active{color:#A8C7E8!important}
+  .menu-toggle{
+    background:linear-gradient(145deg,rgba(168,199,232,.18),rgba(24,43,70,.28))!important;
+    border-color:rgba(168,199,232,.30)!important;
+  }
+}
