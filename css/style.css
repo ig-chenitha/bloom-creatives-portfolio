@@ -2768,3 +2768,12 @@ body.skills-page main{
   .skills-page #skills .skill-card h3{margin:24px 0 9px!important}
   .skills-page-note{padding:40px 0 52px!important}
 }
+
+
+/* Fine-tune: move the Skills content slightly farther below the navbar */
+.skills-page #skills{
+  padding-top:58px!important;
+}
+@media(max-width:800px){
+  .skills-page #skills{padding-top:46px!important}
+}
