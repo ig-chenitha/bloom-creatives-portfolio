@@ -2849,3 +2849,154 @@ body.skills-page footer{
   background:#080808!important;
   border-top:1px solid #ffffff1c!important;
 }
+
+
+/* =========================================================
+   SKILLS PAGE — MATCH THE GALLERY PAGE DESIGN SYSTEM
+   Reuse Gallery's sticky header, page spacing, typography,
+   dark panels, thin borders and three-column card grid.
+   ========================================================= */
+body.skills-page header{
+  position:sticky!important;
+  top:0!important;
+  left:auto!important;
+  width:100%!important;
+  z-index:5!important;
+  background:#080808ed!important;
+  border-bottom:1px solid var(--line)!important;
+  backdrop-filter:blur(16px)!important;
+  padding:15px 0!important;
+}
+body.skills-page header.scrolled{
+  padding:15px 0!important;
+}
+body.skills-page main{
+  padding:20px 0 100px!important;
+  background:#080808!important;
+}
+body.skills-page #skills.skills-section{
+  padding:0!important;
+  margin:0!important;
+  background:#080808!important;
+  border:0!important;
+}
+body.skills-page #skills .wrap{
+  width:min(var(--max),91%)!important;
+  margin:auto!important;
+}
+body.skills-page #skills .section-head{
+  display:flex!important;
+  justify-content:space-between!important;
+  align-items:end!important;
+  gap:30px!important;
+  margin:0 0 38px!important;
+}
+body.skills-page #skills .section-head .kicker{
+  color:#FF9878!important;
+  font-size:10px!important;
+  letter-spacing:.24em!important;
+}
+body.skills-page #skills .section-head h2{
+  font:500 clamp(54px,9vw,100px)/.95 'Outfit',Arial,sans-serif!important;
+  letter-spacing:-.08em!important;
+  margin:14px 0 0!important;
+  color:#f5f5f2!important;
+}
+body.skills-page #skills .section-head p{
+  max-width:380px!important;
+  color:#999!important;
+  font-size:14px!important;
+  line-height:1.8!important;
+  margin:0!important;
+}
+body.skills-page #skills .skills-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:18px!important;
+}
+body.skills-page #skills .skill-card{
+  min-height:230px!important;
+  padding:24px!important;
+  border:1px solid var(--line)!important;
+  border-radius:0!important;
+  background:#101010!important;
+  box-shadow:none!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  transition:background .25s ease,border-color .25s ease!important;
+}
+body.skills-page #skills .skill-card:hover{
+  background:#151515!important;
+  border-color:#ffffff38!important;
+  box-shadow:none!important;
+  transform:translateY(-2px)!important;
+}
+body.skills-page #skills .skill-card>span{
+  color:#FF9878!important;
+  font-size:11px!important;
+  letter-spacing:.16em!important;
+}
+body.skills-page #skills .skill-card h3{
+  color:#f5f5f2!important;
+  font:500 clamp(24px,2.5vw,34px)/1.12 'Outfit',Arial,sans-serif!important;
+  letter-spacing:-.05em!important;
+  margin:38px 0 10px!important;
+}
+body.skills-page #skills .skill-card p{
+  color:#999!important;
+  font-size:12px!important;
+  line-height:1.8!important;
+  margin:0 0 18px!important;
+}
+body.skills-page #skills .skill-tags{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  gap:8px!important;
+  margin-top:auto!important;
+}
+body.skills-page #skills .skill-tags span{
+  border:1px solid #ffffff2a!important;
+  border-radius:2px!important;
+  background:transparent!important;
+  color:#aaa!important;
+  padding:8px 11px!important;
+  font:500 11px 'Outfit',Arial,sans-serif!important;
+}
+body.skills-page .skills-page-note{
+  margin-top:80px!important;
+  padding:65px 0!important;
+  border-top:1px solid var(--line)!important;
+  background:#080808!important;
+}
+body.skills-page .skills-page-note .kicker{color:#FF9878!important}
+body.skills-page .skills-page-note h2{
+  color:#f5f5f2!important;
+  font:500 clamp(48px,7vw,88px)/.98 'Outfit',Arial,sans-serif!important;
+  letter-spacing:-.07em!important;
+}
+body.skills-page .skills-page-note p{
+  color:#999!important;
+  font-size:14px!important;
+  line-height:1.8!important;
+}
+body.skills-page .skills-page-note .button{
+  border-radius:2px!important;
+}
+@media(max-width:800px){
+  body.skills-page header{height:auto!important;min-height:66px!important;padding:12px 0!important}
+  body.skills-page main{padding:16px 0 75px!important}
+  body.skills-page #skills .section-head{display:block!important;margin-bottom:30px!important}
+  body.skills-page #skills .section-head p{margin-top:18px!important}
+  body.skills-page #skills .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  body.skills-page #skills .skill-card{min-height:210px!important;padding:20px!important}
+  body.skills-page #skills .skill-card h3{margin:28px 0 10px!important}
+  body.skills-page .skills-page-note{margin-top:60px!important;padding:50px 0!important}
+}
+@media(max-width:520px){
+  body.skills-page #skills .section-head h2{font-size:clamp(48px,13vw,68px)!important}
+  body.skills-page #skills .skills-grid{grid-template-columns:1fr!important;gap:14px!important}
+  body.skills-page #skills .skill-card{min-height:0!important;padding:22px!important}
+  body.skills-page #skills .skill-card h3{margin:24px 0 10px!important}
+  body.skills-page .skills-page-note{margin-top:45px!important}
+}
