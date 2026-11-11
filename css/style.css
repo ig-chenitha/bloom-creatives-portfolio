@@ -2801,3 +2801,16 @@ body.skills-page main #skills.skills-section{
 @media(max-width:800px){
   body.skills-page main #skills.skills-section{padding-top:16px!important}
 }
+
+
+/* FIX: Skills heading was sitting underneath the fixed navbar.
+   Give the Skills section enough top room so its kicker and heading
+   begin below the navbar, matching the Gallery page's visible gap. */
+body.skills-page main{padding-top:76px!important}
+body.skills-page main #skills.skills-section{
+  padding-top:20px!important;
+}
+@media(max-width:800px){
+  body.skills-page main{padding-top:66px!important}
+  body.skills-page main #skills.skills-section{padding-top:16px!important}
+}
