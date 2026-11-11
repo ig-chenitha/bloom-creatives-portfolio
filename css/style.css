@@ -1395,3 +1395,104 @@ footer{border-top-color:rgba(168,199,232,.20)!important}
     border-color:rgba(168,199,232,.30)!important;
   }
 }
+
+
+/* BLOOM CREATIVES — NEON LIGHT THEME (replaces Midnight Blue accents) */
+:root{
+  --bg:#070711;
+  --panel:#111020;
+  --panel2:#17142B;
+  --white:#F8F7FF;
+  --muted:#B8B4CE;
+  --line:rgba(0,245,255,.22);
+  --soft:#E9E5FF;
+}
+html,body{background-color:#070711!important;color:#F8F7FF!important}
+body{background:linear-gradient(180deg,#070711 0%,#0C0A19 55%,#080711 100%)!important}
+header.scrolled,body.gallery-page header{
+  background:rgba(7,7,17,.94)!important;
+  border-bottom-color:rgba(0,245,255,.22)!important;
+}
+.hero{
+  background:
+    radial-gradient(ellipse at 78% 45%,rgba(124,58,237,.28) 0,transparent 36%),
+    radial-gradient(ellipse at 18% 75%,rgba(0,245,255,.13) 0,transparent 32%),
+    linear-gradient(120deg,#070711 0%,#100D22 58%,#080711 100%)!important;
+}
+.hero h1 span{color:#00F5FF!important}
+.eyebrow,.kicker{color:#00F5FF!important}
+.nav-links{color:#D4D0E8!important}
+.nav-links a:hover,.nav-links a.active,.socials a:hover{color:#00F5FF!important}
+.nav-cta,.button{
+  background:#00F5FF!important;
+  color:#070711!important;
+  border-color:#00F5FF!important;
+  box-shadow:0 0 18px rgba(0,245,255,.20);
+}
+.nav-cta:hover,.button:hover{
+  background:transparent!important;
+  color:#00F5FF!important;
+  border-color:#00F5FF!important;
+  box-shadow:0 0 22px rgba(0,245,255,.24);
+}
+.button.secondary{
+  background:transparent!important;
+  color:#F0ECFF!important;
+  border-color:rgba(184,107,255,.65)!important;
+}
+.button.secondary:hover{
+  background:#B86BFF!important;color:#070711!important;border-color:#B86BFF!important;
+}
+.menu-toggle{color:#F8F7FF!important;border-color:rgba(0,245,255,.30)!important}
+.about-visual,.gallery-tile,.project,.item,.contact-panel,
+.project-story-card,.project-artwork-frame{
+  background:linear-gradient(145deg,rgba(25,20,48,.92),rgba(10,9,24,.96))!important;
+  border-color:rgba(184,107,255,.24)!important;
+}
+.service,.step{border-color:rgba(0,245,255,.18)!important}
+.project-media,.media{background:#100D20!important}
+.project-info{
+  background:linear-gradient(180deg,rgba(25,20,48,.84),rgba(7,7,17,.96))!important;
+}
+.project:hover,.item:hover,.gallery-tile:hover,.service:hover,.step:hover{
+  border-color:rgba(0,245,255,.62)!important;
+  box-shadow:0 0 22px rgba(0,245,255,.10),0 18px 42px rgba(0,0,0,.35)!important;
+}
+.project-index,.gallery-tile span,.service small,.step b,.project-artwork-caption{color:#B8B4CE!important}
+.filters .filter{
+  background:rgba(25,20,48,.65)!important;
+  color:#E6E1F8!important;
+  border-color:rgba(0,245,255,.28)!important;
+}
+.filters .filter.active,.filters .filter:hover{
+  background:#00F5FF!important;color:#070711!important;border-color:#00F5FF!important;
+  box-shadow:0 0 16px rgba(0,245,255,.22);
+}
+.project-back,.project-detail-link{
+  color:#F0ECFF!important;border-color:rgba(0,245,255,.48)!important;
+}
+.project-back:hover{color:#00F5FF!important}
+.project-detail-link:hover{background:#00F5FF!important;color:#070711!important}
+.project-heading .kicker,.project-detail-page .kicker,.project-detail-page #projectCategory{color:#00F5FF!important}
+.project-story-card>span{color:#B86BFF!important}
+.project-story-card h2{color:#FFFFFF!important}
+body.gallery-page .lightbox,.lightbox{background:rgba(5,4,14,.97)!important}
+body.gallery-page .lightbox-eyebrow{color:#00F5FF!important}
+.lightbox button{color:#F0ECFF!important}
+footer{border-top-color:rgba(0,245,255,.20)!important}
+::selection{background:#B86BFF!important;color:#070711!important}
+:focus-visible{outline-color:#00F5FF!important}
+.project:focus-visible,.item:focus-visible{outline-color:#00F5FF!important}
+@media(max-width:800px){
+  header .nav-links.open{
+    background:linear-gradient(145deg,rgba(27,20,52,.97),rgba(7,7,17,.97))!important;
+    border-color:rgba(0,245,255,.30)!important;
+    box-shadow:0 0 28px rgba(124,58,237,.15),0 18px 50px rgba(0,0,0,.5)!important;
+  }
+  header .nav-links.open a{color:#F0ECFF!important}
+  header .nav-links.open a:active{color:#00F5FF!important}
+  .menu-toggle{
+    background:linear-gradient(145deg,rgba(0,245,255,.15),rgba(184,107,255,.12))!important;
+    border-color:rgba(0,245,255,.32)!important;
+  }
+}
