@@ -2814,3 +2814,38 @@ body.skills-page main #skills.skills-section{
   body.skills-page main{padding-top:66px!important}
   body.skills-page main #skills.skills-section{padding-top:16px!important}
 }
+
+
+/* Skills page visual alignment with the site's original dark theme.
+   Intentionally visual-only: do not alter spacing or section positions. */
+body.skills-page{
+  background:#080808!important;
+  color:#f5f5f2!important;
+}
+body.skills-page main,
+body.skills-page #skills.skills-section{
+  background:#080808!important;
+}
+body.skills-page #skills.skills-section{
+  border-top:1px solid #ffffff1c!important;
+  border-bottom:1px solid #ffffff1c!important;
+}
+body.skills-page #skills .skill-card{
+  background:linear-gradient(145deg,#191919,#0c0c0c)!important;
+  border:1px solid #ffffff1c!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+body.skills-page #skills .skill-card:hover{
+  background:linear-gradient(145deg,#202020,#101010)!important;
+  border-color:#ffffff38!important;
+  box-shadow:0 18px 38px rgba(0,0,0,.3)!important;
+}
+body.skills-page .skills-page-note{
+  background:#080808!important;
+  border-top:1px solid #ffffff1c!important;
+}
+body.skills-page footer{
+  background:#080808!important;
+  border-top:1px solid #ffffff1c!important;
+}
