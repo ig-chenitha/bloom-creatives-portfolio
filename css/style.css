@@ -1277,12 +1277,12 @@ a:active,button:active,[role="button"]:active{
   object-fit:contain!important;
   object-position:center;
   padding:5px;
-  filter:grayscale(100%)!important;
+  filter:none!important;
   transition:transform .55s ease,filter .4s ease;
 }
 .work-card:hover .work-image img{
   transform:scale(1.025);
-  filter:grayscale(100%)!important;
+  filter:none!important;
 }
 .work-image:after{
   right:10px;
