@@ -111,3 +111,50 @@ body{background:#030006;color:#fbf5ff}
 .contact h2{font-size:clamp(54px,13vw,82px)}
 }
 @media(max-width:380px){.service-list{grid-template-columns:1fr}.service-list article{min-height:170px}}
+
+
+/* BLOOM BLUE + WHITE COLORWAY — preserve the approved layout */
+:root{--blue:#168bff;--black:#02050b;--panel:#071426;--panel2:#0a1a30;--line:#ffffff24}
+body{background:#02050b;color:#fff}
+.cursor-glow{background:radial-gradient(circle,#087dff35 0,#164bff18 40%,transparent 70%)}
+.site-header{background:linear-gradient(110deg,#071426e8,#030711e8);border-color:#ffffff25}
+.navigation a:hover,.text-link:hover{color:#55b5ff}
+.navigation .nav-contact{background:linear-gradient(110deg,#075dcc,#168bff);box-shadow:0 0 25px #087dff44}
+.nav-contact span,.text-link span{color:#fff}
+.hero:before{background:radial-gradient(ellipse,#075dcc55 0,#063a8733 38%,transparent 70%)}
+.hero:after{background:radial-gradient(ellipse at 28% 24%,#ffffff 0 3%,#9bdcff 9%,#168bff 24%,#0754d7 41%,#bceaff 49%,#1267df 60%,#06142b 73%);filter:drop-shadow(0 0 28px #168bffb0) drop-shadow(0 0 90px #075dcc88);box-shadow:inset 12px 10px 18px #ffffffc0,inset -18px -22px 30px #02050b}
+.availability i{background:#42aaff;box-shadow:0 0 14px #168bff}
+.hero .eyebrow,.intro-copy .eyebrow,.contact .eyebrow{color:#69baff}
+.blue-dot{color:#168bff}
+.round-link span,.work-meta i{color:#72bdff}
+.round-link:hover{background:#168bff;border-color:#168bff;color:#fff}
+.round-link:hover span{color:#fff}
+.hero-marquee b,.intro-copy h2 span,.section-heading h2 span,.work-heading h2 span,.approach h2 span,.contact h2 span{color:#168bff}
+.intro:before{background:radial-gradient(ellipse at 30% 30%,#fff 0 3%,#b8e7ff 12%,#238fff 30%,#0646b2 47%,#e0f5ff 55%,#0b55c5 67%,#06142a 77%);filter:drop-shadow(0 0 38px #168bff80)}
+.portrait-frame{border-color:#168bff88;background:linear-gradient(140deg,#168bff35,#ffffff14,transparent);box-shadow:0 0 70px #087dff30}
+.portrait-frame:before{border-color:#168bff}
+.section-heading:after,.intro-copy h2:after{color:transparent;-webkit-text-stroke-color:#ffffff20}
+.services{background:radial-gradient(ellipse at 50% 55%,#092b5b 0,transparent 66%),#030711}
+.service-list article{background:linear-gradient(145deg,#ffffff13,#087dff18);border-color:#ffffff30}
+.service-list article:hover{border-color:#64baffaa;background:linear-gradient(145deg,#087dff44,#ffffff0b);box-shadow:0 20px 55px #087dff2b}
+.service-list article>span,.service-list article>b{color:#fff}
+.service-list article>b{background:linear-gradient(135deg,#8bd3ff,#087dff)}
+.service-list p{color:#c2d3e7}
+.work{background:#02050b}
+.work-image{background:#071426;border-color:#ffffff25}
+.work-image:after{background:linear-gradient(110deg,#075dcc,#168bff);color:#fff}
+.work-note span,.work-meta i{color:#168bff}
+.approach{background:radial-gradient(ellipse at 8% 45%,#092b5b 0,transparent 50%),#030711}
+.approach-steps b{color:#69baff}
+.approach-steps span{color:#c2d3e7}
+.contact{background:radial-gradient(ellipse at 12% 55%,#073d85 0,transparent 44%),#02050b}
+.contact:before{background:radial-gradient(ellipse at 30% 30%,#fff 0 4%,#b7e8ff 13%,#168bff 35%,#063c9b 53%,#e1f6ff 62%,#06142b 75%);filter:drop-shadow(0 0 38px #168bff9c)}
+.contact-button{background:linear-gradient(110deg,#075dcc,#168bff);color:#fff;box-shadow:0 0 30px #087dff45}
+.contact-button:hover{box-shadow:0 0 45px #087dff88}
+.footer-brand span{color:#168bff}
+::selection{background:#168bff;color:#fff}
+@media(max-width:650px){
+.navigation{background:#061326f5}
+.intro:before{background:radial-gradient(ellipse at 30% 30%,#fff 0 3%,#b8e7ff 12%,#238fff 30%,#0646b2 47%,#e0f5ff 55%,#0b55c5 67%,#06142a 77%)}
+.contact:before{background:radial-gradient(ellipse at 30% 30%,#fff 0 4%,#b7e8ff 13%,#168bff 35%,#063c9b 53%,#e1f6ff 62%,#06142b 75%)}
+}
