@@ -883,7 +883,7 @@ body{background:#000000;color:#FFFFFF}
   padding-top:82px!important;
   padding-bottom:82px!important;
 }
-#about .intro-copy{margin-top:24px!important}
+#about .intro-copy{margin-top:54px!important}
 #about .intro-copy{padding:38px!important}
 .hero{min-height:calc(100svh - 88px)}
 /* Keep the existing desktop hero composition intact */
@@ -893,7 +893,7 @@ body{background:#000000;color:#FFFFFF}
     padding-bottom:62px!important;
   }
   #about .intro-copy{
-    margin-top:18px!important;
+    margin-top:34px!important;
     padding:25px 21px!important;
   }
   .hero{
