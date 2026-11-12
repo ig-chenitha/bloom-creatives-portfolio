@@ -868,3 +868,10 @@ body{background:#000000;color:#FFFFFF}
 @media(max-width:650px){
   .navigation{background:#080B18;border-color:#245BFF44}
 }
+
+
+/* Remove availability label and lift desktop hero content slightly; mobile remains unchanged */
+.hero-topline{display:none!important}
+@media(min-width:651px){
+  .hero-content{padding-top:62px!important}
+}
