@@ -391,3 +391,77 @@ body{background:#030006;color:#fbf5ff}
   font-weight: 800;
   letter-spacing: -.075em;
 }
+
+
+/* BLOOM CREATIVE — unified neon blue + neon purple + black + white palette */
+:root{
+  --bloom-blue:#168BFF;
+  --bloom-purple:#A100FF;
+  --bloom-black:#000000;
+  --bloom-white:#FFFFFF;
+  --blue:#168BFF;
+  --black:#000000;
+  --panel:#080817;
+  --panel2:#100B24;
+  --line:#ffffff26;
+}
+html,body{background:#000000;color:#FFFFFF}
+::selection{background:#168BFF;color:#FFFFFF}
+.cursor-glow{background:radial-gradient(circle,rgba(22,139,255,.22),rgba(161,0,255,.16) 42%,transparent 72%)}
+.site-header{background:linear-gradient(110deg,rgba(10,10,24,.91),rgba(0,0,0,.88));border-color:rgba(255,255,255,.18)}
+.navigation{color:#fff}
+.navigation a:hover,.text-link:hover{color:#69B8FF}
+.navigation .nav-contact,.contact-button{
+  background:linear-gradient(110deg,#126BFF 0%,#5520E8 52%,#A100FF 100%);
+  color:#fff;box-shadow:0 0 28px rgba(60,80,255,.34),0 0 34px rgba(161,0,255,.24)
+}
+.nav-contact span,.text-link span{color:#fff}
+.hero{background:#000}
+.hero:before{background:radial-gradient(ellipse at 65% 45%,rgba(22,139,255,.24),rgba(91,20,220,.18) 42%,transparent 72%)}
+.hero:after{
+  background:radial-gradient(ellipse at 28% 24%,#ffffff 0 3%,#a9ddff 9%,#168BFF 24%,#3920D9 43%,#A100FF 59%,#26005E 74%);
+  filter:drop-shadow(0 0 30px rgba(22,139,255,.68)) drop-shadow(0 0 90px rgba(161,0,255,.48));
+  box-shadow:inset 12px 10px 18px rgba(255,255,255,.7),inset -18px -22px 30px #000
+}
+.availability i{background:#168BFF;box-shadow:0 0 14px #168BFF}
+.hero .eyebrow,.intro-copy .eyebrow,.contact .eyebrow{color:#75C4FF}
+.blue-dot,.round-link span,.work-meta i,.work-note span{color:#72BFFF}
+.round-link:hover{background:linear-gradient(110deg,#168BFF,#7B20FF);border-color:#8B5CFF;color:#fff}
+.round-link:hover span{color:#fff}
+.hero-marquee b,.intro-copy h2 span,.section-heading h2 span,.work-heading h2 span,.approach h2 span,.contact h2 span,.approach-steps b,.footer-brand span{color:#8D55FF}
+.intro:before{
+  background:radial-gradient(ellipse at 30% 30%,#fff 0 3%,#b9e6ff 12%,#168BFF 30%,#3320C9 48%,#A100FF 63%,#17002F 78%);
+  filter:drop-shadow(0 0 38px rgba(22,139,255,.4)) drop-shadow(0 0 45px rgba(161,0,255,.35))
+}
+#about .intro-copy{
+  border-color:rgba(145,160,255,.28);
+  background:linear-gradient(135deg,rgba(22,139,255,.13),rgba(255,255,255,.035) 45%,rgba(161,0,255,.13)),rgba(5,5,15,.38);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 22px 70px rgba(0,0,0,.4),0 0 42px rgba(22,139,255,.12),0 0 46px rgba(161,0,255,.12)
+}
+#about .intro-copy:before{background:radial-gradient(circle,rgba(22,139,255,.24),rgba(161,0,255,.16) 42%,transparent 72%)}
+.portrait-frame{border-color:rgba(22,139,255,.55);background:linear-gradient(140deg,rgba(22,139,255,.24),rgba(161,0,255,.2),transparent);box-shadow:0 0 70px rgba(22,139,255,.2)}
+.portrait-frame:before{border-color:rgba(161,0,255,.55)}
+.services{background:radial-gradient(ellipse at 25% 55%,rgba(22,139,255,.14),transparent 48%),radial-gradient(ellipse at 80% 55%,rgba(161,0,255,.16),transparent 50%),#000}
+.service-list article{background:linear-gradient(145deg,rgba(22,139,255,.10),rgba(161,0,255,.12));border-color:rgba(255,255,255,.2)}
+.service-list article:hover{border-color:rgba(110,170,255,.75);background:linear-gradient(145deg,rgba(22,139,255,.22),rgba(161,0,255,.2));box-shadow:0 20px 55px rgba(22,100,255,.18),0 15px 45px rgba(161,0,255,.16)}
+.service-list article>span{color:#8BCBFF}
+.service-list article>b{background:linear-gradient(135deg,#168BFF,#762BFF,#A100FF);color:#fff}
+.service-list p,.approach-steps span,.footer p,.footer>div a,.footer small{color:#C5C5D4}
+.work,.approach{background:#000}
+.work-image{background:#080817;border-color:rgba(255,255,255,.2)}
+.work-image:after{background:linear-gradient(110deg,#168BFF,#5520E8,#A100FF);color:#fff}
+.approach{background:radial-gradient(ellipse at 8% 45%,rgba(22,139,255,.16),transparent 48%),radial-gradient(ellipse at 90% 50%,rgba(161,0,255,.16),transparent 48%),#000}
+.approach-steps b{color:#8BCBFF}
+.contact{background:radial-gradient(ellipse at 12% 55%,rgba(22,139,255,.22),transparent 44%),radial-gradient(ellipse at 90% 50%,rgba(161,0,255,.2),transparent 48%),#000}
+.contact:before{
+  background:radial-gradient(ellipse at 30% 30%,#fff 0 4%,#b9e6ff 13%,#168BFF 35%,#3920D9 53%,#A100FF 68%,#17002F 78%);
+  filter:drop-shadow(0 0 38px rgba(22,139,255,.45)) drop-shadow(0 0 38px rgba(161,0,255,.42))
+}
+.contact-button:hover{box-shadow:0 0 38px rgba(22,139,255,.45),0 0 48px rgba(161,0,255,.42)}
+.footer{background:#000}
+.footer-brand span{color:#168BFF}
+@media(max-width:650px){
+  .navigation{background:rgba(5,5,18,.97)}
+  .intro:before{background:radial-gradient(ellipse at 30% 30%,#fff 0 3%,#b9e6ff 12%,#168BFF 30%,#3320C9 48%,#A100FF 63%,#17002F 78%)}
+  .contact:before{background:radial-gradient(ellipse at 30% 30%,#fff 0 4%,#b9e6ff 13%,#168BFF 35%,#3920D9 53%,#A100FF 68%,#17002F 78%)}
+}
