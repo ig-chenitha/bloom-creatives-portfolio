@@ -1559,3 +1559,13 @@ a:active,button:active,[role="button"]:active{
 .work-gallery-link span{font-size:16px;line-height:1}
 .work-gallery-link:hover{background:#fff;color:#000;border-color:#fff;transform:translateY(-2px)}
 @media(max-width:650px){.work-gallery-cta{margin-top:48px}.work-gallery-link{padding:15px 20px;font-size:8px;gap:22px}}
+
+
+/* Premium liquid-glass gallery button */
+.work-gallery-cta{display:flex!important;justify-content:center!important;align-items:center!important;width:100%;margin:64px auto 0!important;text-align:center}
+.work-gallery-cta>.work-gallery-link{position:relative;isolation:isolate;display:inline-flex!important;align-items:center;justify-content:center;gap:22px;min-width:218px;min-height:52px;padding:0 25px!important;overflow:hidden;border:1px solid rgba(255,255,255,.24)!important;border-radius:999px!important;background:linear-gradient(135deg,rgba(255,255,255,.17),rgba(255,255,255,.055) 48%,rgba(255,255,255,.10))!important;color:#fff!important;text-decoration:none!important;font-family:var(--font)!important;font-size:10px!important;font-weight:600!important;letter-spacing:1.35px;backdrop-filter:blur(22px) saturate(165%);-webkit-backdrop-filter:blur(22px) saturate(165%);box-shadow:inset 0 1px 1px rgba(255,255,255,.24),inset 0 -1px 1px rgba(255,255,255,.07),0 8px 28px rgba(0,0,0,.38),0 0 22px rgba(255,255,255,.035);transition:background .3s ease,border-color .3s ease,box-shadow .3s ease,transform .3s ease}
+.work-gallery-cta>.work-gallery-link:before{content:"";position:absolute;z-index:-1;inset:1px;border-radius:inherit;background:linear-gradient(115deg,rgba(255,255,255,.13),transparent 38%,rgba(255,255,255,.045) 72%,rgba(255,255,255,.10));pointer-events:none}
+.work-gallery-cta>.work-gallery-link span{display:inline-block;margin:0!important;color:rgba(255,255,255,.88);font-size:16px;line-height:1;transition:transform .3s ease}
+.work-gallery-cta>.work-gallery-link:hover{transform:translateY(-3px)!important;border-color:rgba(255,255,255,.48)!important;background:linear-gradient(135deg,rgba(255,255,255,.24),rgba(255,255,255,.09) 50%,rgba(255,255,255,.16))!important;box-shadow:inset 0 1px 1px rgba(255,255,255,.34),0 12px 34px rgba(0,0,0,.45),0 0 28px rgba(255,255,255,.09)}
+.work-gallery-cta>.work-gallery-link:hover span{transform:translate(3px,-2px)}
+@media(max-width:650px){.work-gallery-cta{margin-top:46px!important}.work-gallery-cta>.work-gallery-link{min-width:205px;min-height:50px;font-size:9px!important}}
