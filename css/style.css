@@ -465,3 +465,10 @@ html,body{background:#000000;color:#FFFFFF}
   .intro:before{background:radial-gradient(ellipse at 30% 30%,#fff 0 3%,#b9e6ff 12%,#168BFF 30%,#3320C9 48%,#A100FF 63%,#17002F 78%)}
   .contact:before{background:radial-gradient(ellipse at 30% 30%,#fff 0 4%,#b9e6ff 13%,#168BFF 35%,#3920D9 53%,#A100FF 68%,#17002F 78%)}
 }
+
+
+/* Hero 3D orb: replace the white hotspot with neon blue light */
+.hero:after{
+  background:radial-gradient(ellipse at 28% 24%,#168BFF 0 3%,#5CB8FF 9%,#168BFF 24%,#3920D9 43%,#8D24FF 59%,#26005E 74%);
+  box-shadow:inset 12px 10px 18px rgba(22,139,255,.72),inset -18px -22px 30px #000;
+}
