@@ -2851,12 +2851,12 @@ body.skills-page footer{
 }
 
 
-/* Mobile only: match Creative Gallery card spacing and typography to the Process cards */
+/* Mobile only: slightly tighter gallery cards; keep typography comfortably large */
 @media(max-width:600px){
   body:not(.gallery-page) #gallery .gallery-tile{
-    min-height:220px!important;
-    padding:26px!important;
-    gap:17px!important;
+    min-height:195px!important;
+    padding:22px!important;
+    gap:12px!important;
   }
   body:not(.gallery-page) #gallery .gallery-tile strong br{
     display:none!important;
@@ -2866,6 +2866,7 @@ body.skills-page footer{
     font-size:clamp(19px,5.8vw,26px)!important;
     line-height:1.15!important;
     letter-spacing:-.045em!important;
+    word-spacing:.08em!important;
   }
   body:not(.gallery-page) #gallery .gallery-tile span{
     font-size:10px!important;
@@ -2874,5 +2875,6 @@ body.skills-page footer{
   body:not(.gallery-page) #gallery .gallery-tile small{
     font-size:14px!important;
     line-height:1.7!important;
+    word-spacing:.04em!important;
   }
 }
