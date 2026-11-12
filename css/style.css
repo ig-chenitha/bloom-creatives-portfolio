@@ -525,3 +525,63 @@ html,body{background:#000000;color:#FFFFFF}
 @media(prefers-reduced-motion:reduce){
   .hero:after{animation:none}
 }
+
+
+/* Final Bloom palette: deep black + neon purple only (remove blue accents) */
+:root{
+  --bloom-blue:#A100FF;
+  --bloom-purple:#A100FF;
+  --blue:#A100FF;
+  --black:#000000;
+  --panel:#08000F;
+  --panel2:#10001D;
+  --line:#ffffff24;
+}
+html,body,.hero,.work,.footer{background-color:#000000}
+.cursor-glow{background:radial-gradient(circle,rgba(161,0,255,.22),transparent 70%)}
+.site-header{background:linear-gradient(110deg,rgba(12,0,20,.94),rgba(0,0,0,.92))}
+.navigation a:hover,.text-link:hover,.nav-contact span,.text-link span,
+.availability i,.hero .eyebrow,.intro-copy .eyebrow,.contact .eyebrow,
+.blue-dot,.round-link span,.hero-marquee b,.intro-copy h2 span,
+.section-heading h2 span,.work-heading h2 span,.approach h2 span,
+.contact h2 span,.approach-steps b,.footer-brand span,.work-meta i,
+.work-note span{color:#B64DFF}
+.navigation .nav-contact,.contact-button,.work-image:after{
+  background:linear-gradient(110deg,#6500D8,#A100FF 58%,#C044FF);
+  color:#fff;
+  box-shadow:0 0 28px rgba(161,0,255,.35)
+}
+.availability i{background:#A100FF;box-shadow:0 0 14px #A100FF}
+.hero:before{background:radial-gradient(ellipse,rgba(161,0,255,.25),transparent 70%)}
+.hero:after{
+  background:
+    radial-gradient(ellipse at 27% 27%,rgba(255,255,255,.72) 0 1.8%,rgba(213,160,255,.55) 5%,transparent 19%),
+    radial-gradient(ellipse at 33% 37%,rgba(161,0,255,.96) 0 14%,transparent 43%),
+    radial-gradient(ellipse at 72% 29%,rgba(190,55,255,.95) 0 8%,transparent 42%),
+    radial-gradient(ellipse at 68% 78%,rgba(85,0,170,.92) 0 15%,transparent 47%),
+    linear-gradient(132deg,#8E27D8 0%,#6500D8 26%,#3A087A 56%,#A100FF 82%,#18002B 100%);
+  border-color:rgba(215,174,255,.34);
+  filter:drop-shadow(0 0 24px rgba(161,0,255,.58)) drop-shadow(0 0 70px rgba(100,0,190,.42));
+  box-shadow:inset 13px 12px 25px rgba(255,255,255,.32),inset -20px -26px 38px rgba(0,0,0,.68),inset 0 -3px 12px rgba(190,120,255,.25)
+}
+.hero-marquee{border-color:#ffffff20}
+.intro:before,.contact:before{
+  background:radial-gradient(ellipse at 30% 30%,rgba(255,255,255,.5) 0 3%,#A100FF 18%,#5200A8 48%,#160020 78%);
+  filter:drop-shadow(0 0 38px rgba(161,0,255,.5))
+}
+#about .intro-copy{
+  border-color:rgba(190,120,255,.28);
+  background:linear-gradient(135deg,rgba(161,0,255,.16),rgba(255,255,255,.035) 45%,rgba(100,0,190,.13)),rgba(5,0,12,.48);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 22px 70px rgba(0,0,0,.45),0 0 48px rgba(161,0,255,.16)
+}
+#about .intro-copy:before{background:radial-gradient(circle,rgba(190,100,255,.24),transparent 70%)}
+.service-list article{background:linear-gradient(145deg,rgba(100,0,190,.12),rgba(161,0,255,.12));border-color:rgba(255,255,255,.18)}
+.service-list article:hover{border-color:rgba(190,100,255,.75);background:linear-gradient(145deg,rgba(100,0,190,.24),rgba(161,0,255,.2));box-shadow:0 20px 55px rgba(100,0,190,.2)}
+.service-list article>span{color:#C78BFF}
+.service-list article>b{background:linear-gradient(135deg,#6500D8,#A100FF);color:#fff}
+.round-link:hover{background:linear-gradient(110deg,#6500D8,#A100FF);border-color:#B64DFF;color:#fff}
+.round-link:hover span{color:#fff}
+.approach{background:radial-gradient(ellipse at 8% 45%,rgba(100,0,190,.16),transparent 48%),radial-gradient(ellipse at 90% 50%,rgba(161,0,255,.16),transparent 48%),#000}
+.contact{background:radial-gradient(ellipse at 12% 55%,rgba(100,0,190,.2),transparent 44%),radial-gradient(ellipse at 90% 50%,rgba(161,0,255,.18),transparent 48%),#000}
+.contact-button:hover{box-shadow:0 0 38px rgba(161,0,255,.45)}
+::selection{background:#A100FF;color:#fff}
