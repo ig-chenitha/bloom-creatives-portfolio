@@ -1551,3 +1551,11 @@ a:active,button:active,[role="button"]:active{
   .inner-page{padding-top:38px}
   .page-intro .section-label{margin-bottom:42px}
 }
+
+
+/* Selected Work — clear route to the complete gallery */
+.work-gallery-cta{display:flex;justify-content:center;margin:75px 0 0}
+.work-gallery-link{display:inline-flex;align-items:center;gap:28px;padding:16px 23px;border:1px solid #555;border-radius:999px;color:#fff;text-decoration:none;font:700 9px Outfit,sans-serif;letter-spacing:1.5px;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.work-gallery-link span{font-size:16px;line-height:1}
+.work-gallery-link:hover{background:#fff;color:#000;border-color:#fff;transform:translateY(-2px)}
+@media(max-width:650px){.work-gallery-cta{margin-top:48px}.work-gallery-link{padding:15px 20px;font-size:8px;gap:22px}}
