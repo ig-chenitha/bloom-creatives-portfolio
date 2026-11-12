@@ -1129,3 +1129,21 @@ html,body{background:#000000!important;color:#FFFFFF!important}
     line-height:1!important;
   }
 }
+
+
+/* BLOOM MOBILE: remove browser blue tap highlight */
+html,body,*{
+  -webkit-tap-highlight-color:transparent;
+}
+a,button,[role="button"],input,textarea,select{
+  -webkit-tap-highlight-color:transparent!important;
+  accent-color:#FFFFFF;
+}
+a:focus,a:active,a:focus-visible,
+button:focus,button:active,button:focus-visible,
+[role="button"]:focus,[role="button"]:active{
+  -webkit-tap-highlight-color:transparent!important;
+}
+a:active,button:active,[role="button"]:active{
+  color:inherit;
+}
