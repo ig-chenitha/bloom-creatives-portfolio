@@ -1147,3 +1147,33 @@ button:focus,button:active,button:focus-visible,
 a:active,button:active,[role="button"]:active{
   color:inherit;
 }
+
+
+/* BLOOM HERO ENTRANCE: soft blur reveal on first page load */
+@keyframes bloomHeroBlurReveal{
+  0%{opacity:0;filter:blur(16px);transform:translateY(22px)}
+  65%{opacity:1;filter:blur(2px);transform:translateY(0)}
+  100%{opacity:1;filter:blur(0);transform:translateY(0)}
+}
+.hero-content{
+  animation:bloomHeroBlurReveal 1.25s cubic-bezier(.2,.7,.2,1) both;
+}
+.hero-topline{
+  animation:bloomHeroBlurReveal 1s cubic-bezier(.2,.7,.2,1) both;
+  animation-delay:.12s;
+}
+.hero:before{
+  animation:bloomHeroGlowReveal 1.8s ease-out both;
+}
+@keyframes bloomHeroGlowReveal{
+  0%{opacity:0;filter:blur(45px)}
+  100%{opacity:1;filter:blur(15px)}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-content,.hero-topline,.hero:before{
+    animation:none!important;
+    filter:none!important;
+    transform:none!important;
+    opacity:1!important;
+  }
+}
