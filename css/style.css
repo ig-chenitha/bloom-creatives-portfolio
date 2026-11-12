@@ -1353,3 +1353,65 @@ a:active,button:active,[role="button"]:active{
 @media(prefers-reduced-motion:reduce){
   .work-card,.work-image img,.navigation .nav-contact{transition:none!important}
 }
+
+
+/* BLOOM PROJECT PREVIEW: open artwork only from the View Project control */
+.work-card{cursor:default!important}
+.work-card:hover{transform:none!important}
+.work-card:hover .work-image img{transform:none!important}
+.work-image:after{display:none!important}
+.work-view{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  flex:0 0 auto;
+  border:1px solid rgba(255,255,255,.34);
+  border-radius:999px;
+  padding:9px 12px;
+  background:#fff;
+  color:#000;
+  font-size:8px;
+  font-weight:700;
+  letter-spacing:.7px;
+  cursor:pointer;
+  transition:background .2s ease,color .2s ease,transform .2s ease;
+}
+.work-view span{font-size:13px;line-height:1}
+.work-view:hover{background:#cfcfcf;transform:translateY(-1px)}
+.work-image img,.lightbox img{
+  -webkit-user-drag:none;
+  user-select:none;
+  -webkit-user-select:none;
+  -webkit-touch-callout:none;
+}
+.lightbox{
+  padding:28px;
+  gap:16px;
+  background:rgba(0,0,0,.96);
+  -webkit-backdrop-filter:blur(18px);
+  backdrop-filter:blur(18px);
+}
+.lightbox img{
+  width:auto;
+  height:auto;
+  max-width:min(92vw,1180px);
+  max-height:calc(90vh - 65px);
+  object-fit:contain;
+  pointer-events:none;
+}
+.lightbox p{margin:0;color:#fff;font-size:12px;letter-spacing:1.2px;text-align:center}
+.lightbox-close{
+  width:44px;height:44px;
+  display:grid;place-items:center;
+  border:1px solid #ffffff55;
+  border-radius:50%;
+  background:#151515;
+  font-size:30px;
+}
+@media(max-width:650px){
+  .work-meta{align-items:flex-start!important;flex-direction:column;gap:9px!important}
+  .work-view{font-size:7px;padding:8px 10px}
+  .lightbox{padding:18px}
+  .lightbox img{max-width:94vw;max-height:82vh}
+}
