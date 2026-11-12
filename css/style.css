@@ -968,3 +968,54 @@ body{background:#000000;color:#FFFFFF}
   .hero-description{max-width:58%!important;font-size:10px!important}
   .hero-bottom .round-link{min-width:116px!important;padding:0 10px!important}
 }
+
+
+/* MOBILE HERO CTA: keep Explore My Work as one unbroken pill */
+@media(max-width:650px){
+  .hero-bottom{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:10px!important;
+  }
+  .hero-description{
+    flex:1 1 auto!important;
+    min-width:0!important;
+    max-width:none!important;
+  }
+  .hero-bottom .round-link{
+    flex:0 0 132px!important;
+    width:132px!important;
+    min-width:132px!important;
+    max-width:132px!important;
+    height:42px!important;
+    padding:0 10px!important;
+    border-radius:999px!important;
+    flex-direction:row!important;
+    flex-wrap:nowrap!important;
+    gap:7px!important;
+    white-space:nowrap!important;
+    font-size:8px!important;
+    letter-spacing:.25px!important;
+    line-height:1!important;
+    overflow:visible!important;
+  }
+  .hero-bottom .round-link br{display:none!important}
+  .hero-bottom .round-link span{
+    flex:0 0 auto!important;
+    font-size:12px!important;
+    line-height:1!important;
+  }
+}
+@media(max-width:380px){
+  .hero-bottom{gap:7px!important}
+  .hero-bottom .round-link{
+    flex-basis:124px!important;
+    width:124px!important;
+    min-width:124px!important;
+    max-width:124px!important;
+    font-size:7.5px!important;
+    padding:0 8px!important;
+  }
+}
