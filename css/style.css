@@ -1079,3 +1079,53 @@ html,body{background:#000000!important;color:#FFFFFF!important}
 @media(max-width:650px){
   .navigation{background:#171717!important;border-color:#FFFFFF30!important}
 }
+
+
+/* MOBILE HERO: stack Explore button directly below the paragraph */
+@media(max-width:650px){
+  .hero-bottom{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+    flex-wrap:nowrap!important;
+    gap:18px!important;
+    width:100%!important;
+  }
+  .hero-description{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    flex:none!important;
+    margin:0!important;
+  }
+  .hero-bottom .round-link{
+    display:inline-flex!important;
+    align-self:flex-start!important;
+    flex:none!important;
+    width:auto!important;
+    min-width:150px!important;
+    max-width:none!important;
+    height:46px!important;
+    margin:0!important;
+    padding:0 20px!important;
+    border-radius:999px!important;
+    flex-direction:row!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:10px!important;
+    white-space:nowrap!important;
+    font-size:9px!important;
+    letter-spacing:.6px!important;
+    line-height:1!important;
+    transform:none!important;
+    rotate:0deg!important;
+  }
+  .hero-bottom .round-link br{display:none!important}
+  .hero-bottom .round-link span{
+    display:inline-block!important;
+    flex:none!important;
+    font-size:14px!important;
+    line-height:1!important;
+  }
+}
