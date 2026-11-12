@@ -2851,12 +2851,20 @@ body.skills-page footer{
 }
 
 
-/* Mobile only: slightly smaller gallery typography while preserving card spacing */
+/* Mobile only: remove the large empty gap between gallery titles and descriptions */
 @media(max-width:600px){
   body:not(.gallery-page) #gallery .gallery-tile{
     min-height:195px!important;
     padding:22px!important;
-    gap:12px!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+    gap:0!important;
+  }
+  body:not(.gallery-page) #gallery .gallery-tile span{
+    font-size:9px!important;
+    letter-spacing:.16em!important;
+    margin-bottom:28px!important;
   }
   body:not(.gallery-page) #gallery .gallery-tile strong br{
     display:none!important;
@@ -2867,14 +2875,12 @@ body.skills-page footer{
     line-height:1.15!important;
     letter-spacing:-.045em!important;
     word-spacing:.08em!important;
-  }
-  body:not(.gallery-page) #gallery .gallery-tile span{
-    font-size:9px!important;
-    letter-spacing:.16em!important;
+    margin:0 0 8px!important;
   }
   body:not(.gallery-page) #gallery .gallery-tile small{
     font-size:13px!important;
     line-height:1.7!important;
     word-spacing:.04em!important;
+    margin:0!important;
   }
 }
