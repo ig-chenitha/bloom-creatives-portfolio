@@ -312,3 +312,14 @@ body{background:#030006;color:#fbf5ff}
     margin-top: 14px;
   }
 }
+
+
+/* Give the About liquid glass panel more space below its heading */
+#about .intro-copy {
+  margin-top: 42px;
+}
+@media (max-width: 700px) {
+  #about .intro-copy {
+    margin-top: 30px;
+  }
+}
