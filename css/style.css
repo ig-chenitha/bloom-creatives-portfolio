@@ -3007,3 +3007,83 @@ section,.services,.process{border-color:rgba(255,255,255,.12)!important}
 ::selection{background:#f5f5f2!important;color:#080808!important}
 :focus-visible,.project:focus-visible,.item:focus-visible{outline-color:#ffffff!important}
 footer{background:#050505!important;border-top:1px solid rgba(255,255,255,.12)!important;color:#999999!important}
+
+/* Exact monochrome homepage hero reference restoration */
+body:not(.gallery-page) .hero{
+  min-height:575px!important;height:auto!important;
+  padding:88px 0 58px!important;
+  display:block!important;position:relative!important;overflow:hidden!important;
+  isolation:isolate!important;background:#090909!important;
+}
+body:not(.gallery-page) .hero .wrap.hero-content{
+  width:min(1075px,82%)!important;margin:0 auto!important;
+  position:relative!important;z-index:4!important;
+}
+body:not(.gallery-page) .hero .eyebrow{
+  display:block!important;width:max-content!important;max-width:100%!important;
+  padding:0!important;margin:0!important;border:0!important;border-radius:0!important;
+  background:transparent!important;box-shadow:none!important;
+  color:#a5a5a5!important;font-size:13px!important;letter-spacing:.13em!important;
+}
+body:not(.gallery-page) .hero .eyebrow:before{display:none!important;content:none!important}
+body:not(.gallery-page) .hero h1{
+  max-width:900px!important;margin:28px 0 34px!important;
+  font-family:'Outfit',sans-serif!important;
+  font-size:clamp(68px,8.5vw,112px)!important;
+  font-weight:600!important;line-height:.91!important;
+  letter-spacing:-.075em!important;color:#f5f5f2!important;
+  text-align:left!important;
+}
+body:not(.gallery-page) .hero h1 span{
+  display:inline!important;margin:0!important;
+  color:#777777!important;background:none!important;
+  -webkit-text-fill-color:#777777!important;
+}
+body:not(.gallery-page) .hero-bottom{
+  max-width:100%!important;margin-top:32px!important;
+  display:flex!important;flex-direction:row!important;
+  align-items:flex-end!important;justify-content:space-between!important;
+  gap:28px!important;
+}
+body:not(.gallery-page) .hero-copy{
+  max-width:360px!important;margin:0!important;
+  color:#a6a6a6!important;font-size:13px!important;line-height:1.85!important;
+}
+body:not(.gallery-page) .hero-actions{display:flex!important;justify-content:flex-end!important;gap:10px!important}
+body:not(.gallery-page) .hero-actions .button{
+  min-width:174px!important;padding:13px 22px!important;border-radius:999px!important;
+  background:#f5f5f2!important;color:#090909!important;border:1px solid #f5f5f2!important;
+  box-shadow:none!important;font-size:12px!important;font-weight:700!important;
+}
+body:not(.gallery-page) .hero-actions .button.secondary{
+  background:transparent!important;color:#e8e8e8!important;border-color:#454545!important;
+}
+body:not(.gallery-page) .hero-actions .button:hover{background:#d9d9d9!important;color:#080808!important}
+body:not(.gallery-page) .hero:before{
+  content:""!important;display:block!important;position:absolute!important;
+  z-index:1!important;pointer-events:none!important;
+  width:490px!important;height:490px!important;right:-165px!important;top:10px!important;
+  border:1px solid rgba(255,255,255,.055)!important;border-radius:50%!important;
+  box-shadow:0 0 0 45px rgba(255,255,255,.018),0 0 0 92px rgba(255,255,255,.012)!important;
+}
+body:not(.gallery-page) .hero:after{display:none!important;content:none!important}
+body:not(.gallery-page) .hero-orb,body:not(.gallery-page) .hero-side-note{display:none!important}
+body:not(.gallery-page) .hero .scroll-note{
+  position:absolute!important;right:5%!important;bottom:25px!important;
+  color:#777!important;font-size:11px!important;letter-spacing:.16em!important;
+}
+@media(max-width:800px){
+ body:not(.gallery-page) .hero{min-height:650px!important;padding:90px 0 90px!important}
+ body:not(.gallery-page) .hero .wrap.hero-content{width:88%!important}
+ body:not(.gallery-page) .hero h1{font-size:clamp(54px,11vw,86px)!important}
+ body:not(.gallery-page) .hero-bottom{align-items:flex-start!important;flex-direction:column!important}
+ body:not(.gallery-page) .hero-actions{justify-content:flex-start!important}
+ body:not(.gallery-page) .hero:before{width:340px!important;height:340px!important;right:-210px!important;top:80px!important}
+}
+@media(max-width:520px){
+ body:not(.gallery-page) .hero{min-height:620px!important;padding-top:85px!important}
+ body:not(.gallery-page) .hero .eyebrow{font-size:10px!important;letter-spacing:.08em!important}
+ body:not(.gallery-page) .hero h1{font-size:clamp(48px,12vw,64px)!important}
+ body:not(.gallery-page) .hero-actions{width:100%!important;flex-direction:column!important}
+ body:not(.gallery-page) .hero-actions .button{width:100%!important}
+}
