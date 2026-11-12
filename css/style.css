@@ -2849,3 +2849,15 @@ body.skills-page footer{
   background:#080808!important;
   border-top:1px solid #ffffff1c!important;
 }
+
+
+/* Mobile only: keep the Social Media gallery title on one line */
+@media(max-width:520px){
+  body:not(.gallery-page) #gallery .gallery-tile:nth-child(2) strong br{
+    display:none!important;
+  }
+  body:not(.gallery-page) #gallery .gallery-tile:nth-child(2) strong{
+    white-space:nowrap!important;
+    font-size:clamp(23px,7vw,32px)!important;
+  }
+}
