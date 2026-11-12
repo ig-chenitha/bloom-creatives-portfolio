@@ -2851,13 +2851,28 @@ body.skills-page footer{
 }
 
 
-/* Mobile only: keep the Social Media gallery title on one line */
-@media(max-width:520px){
-  body:not(.gallery-page) #gallery .gallery-tile:nth-child(2) strong br{
+/* Mobile only: make every Creative Gallery topic compact and keep titles on one line */
+@media(max-width:600px){
+  body:not(.gallery-page) #gallery .gallery-tile{
+    min-height:150px!important;
+    padding:18px!important;
+    gap:12px!important;
+  }
+  body:not(.gallery-page) #gallery .gallery-tile strong br{
     display:none!important;
   }
-  body:not(.gallery-page) #gallery .gallery-tile:nth-child(2) strong{
+  body:not(.gallery-page) #gallery .gallery-tile strong{
     white-space:nowrap!important;
-    font-size:clamp(23px,7vw,32px)!important;
+    font-size:clamp(17px,5.2vw,24px)!important;
+    line-height:1.1!important;
+    letter-spacing:-.045em!important;
+  }
+  body:not(.gallery-page) #gallery .gallery-tile span{
+    font-size:8px!important;
+    letter-spacing:.14em!important;
+  }
+  body:not(.gallery-page) #gallery .gallery-tile small{
+    font-size:10px!important;
+    line-height:1.5!important;
   }
 }
