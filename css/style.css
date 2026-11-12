@@ -2902,3 +2902,23 @@ body.skills-page footer{
     color:#888!important;
   }
 }
+
+/* Apply the restored monochrome black, white and grey design to the four home-page topic cards */
+body:not(.gallery-page) #gallery .gallery-tile{
+  background:linear-gradient(145deg,#191919,#0c0c0c)!important;
+  border:1px solid #ffffff1c!important;
+  box-shadow:none!important;
+}
+body:not(.gallery-page) #gallery .gallery-tile span{
+  color:#999!important;
+}
+body:not(.gallery-page) #gallery .gallery-tile strong{
+  color:#f5f5f2!important;
+}
+body:not(.gallery-page) #gallery .gallery-tile small{
+  color:#888!important;
+}
+body:not(.gallery-page) #gallery .gallery-tile:hover{
+  background:linear-gradient(145deg,#202020,#101010)!important;
+  border-color:#ffffff38!important;
+}
