@@ -802,3 +802,30 @@ html,body,.hero,.work,.footer{background-color:#000000!important;color:#ffffff}
   }
   .hero-bottom .round-link:hover span{color:#000000}
 }
+
+
+/* Mobile only: make the hero Explore button a rounded pill like desktop.
+   Preserve the paragraph, spacing, position, and every other mobile element. */
+@media (max-width:650px){
+  .hero-bottom .round-link{
+    width:auto;
+    min-width:142px;
+    height:44px;
+    padding:0 17px;
+    border-radius:999px;
+    display:inline-flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    white-space:nowrap;
+    font-size:9px;
+    line-height:1;
+    flex-shrink:0;
+  }
+  .hero-bottom .round-link br{display:none}
+  .hero-bottom .round-link span{
+    font-size:14px;
+    margin:0;
+  }
+}
