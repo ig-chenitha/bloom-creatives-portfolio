@@ -1618,3 +1618,11 @@ a:active,button:active,[role="button"]:active{
 @media(min-width:651px) and (max-width:900px){.hero h1 .hero-brand-line{font-size:clamp(42px,7.3vw,66px)!important}}
 @media(max-width:650px){.hero h1 .hero-brand-line{font-size:clamp(23px,7.3vw,48px)!important;letter-spacing:-.09em!important}}
 @media(max-width:360px){.hero h1 .hero-brand-line{font-size:22px!important}}
+
+
+/* Enlarge the single-line BLOOM CREATIVES heading while keeping it on one line */
+.hero h1 .hero-brand-line{font-size:clamp(34px,9vw,124px)!important;letter-spacing:-.095em!important}
+@media(min-width:901px){.hero h1 .hero-brand-line{font-size:clamp(78px,9vw,124px)!important}}
+@media(min-width:651px) and (max-width:900px){.hero h1 .hero-brand-line{font-size:clamp(50px,9vw,82px)!important}}
+@media(max-width:650px){.hero h1 .hero-brand-line{font-size:clamp(29px,9.8vw,48px)!important;letter-spacing:-.10em!important}}
+@media(max-width:360px){.hero h1 .hero-brand-line{font-size:clamp(26px,9vw,34px)!important}}
