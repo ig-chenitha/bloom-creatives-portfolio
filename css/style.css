@@ -370,3 +370,24 @@ body{background:#030006;color:#fbf5ff}
   filter:drop-shadow(0 0 38px rgba(161,0,255,.65));
 }
 ::selection { background:#8d24ff; color:#fff; }
+
+
+/* Replace thin outlined display lettering with a stronger filled style site-wide */
+.outline {
+  color: #c18aff;
+  -webkit-text-stroke: 0;
+  background: linear-gradient(100deg,#f7edff 0%,#c18aff 48%,#8d24ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: -.085em;
+}
+.intro-copy h2:after,
+.section-heading:after {
+  color: rgba(177,44,255,.10);
+  -webkit-text-stroke: 0;
+  -webkit-text-fill-color: rgba(177,44,255,.10);
+  font-weight: 800;
+  letter-spacing: -.075em;
+}
