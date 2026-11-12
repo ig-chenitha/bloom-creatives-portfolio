@@ -1541,3 +1541,13 @@ a:active,button:active,[role="button"]:active{
     font-size: 8px;
   }
 }
+
+
+/* BLOOM INNER PAGES — remove the top divider and tighten the page intro spacing */
+.inner-page{padding-top:52px}
+.inner-page .section-label{border-top:0;padding-top:0}
+.page-intro .section-label{margin-bottom:55px}
+@media(max-width:650px){
+  .inner-page{padding-top:38px}
+  .page-intro .section-label{margin-bottom:42px}
+}
