@@ -1177,3 +1177,24 @@ a:active,button:active,[role="button"]:active{
     opacity:1!important;
   }
 }
+
+/* FOOTER BRAND: use the Bloom logo asset instead of a text wordmark */
+.footer-brand{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  line-height:0;
+}
+.footer-brand img{
+  display:block;
+  width:142px;
+  max-width:100%;
+  height:auto;
+  max-height:46px;
+  object-fit:contain;
+  object-position:left center;
+  filter:brightness(0) invert(1);
+}
+@media(max-width:650px){
+  .footer-brand img{width:125px}
+}
