@@ -1510,3 +1510,34 @@ a:active,button:active,[role="button"]:active{
 .reviews-section>.section-label{margin-bottom:35px}.reviews-heading{display:block}.reviews-heading>p{margin-top:14px}.reviews-grid{grid-template-columns:1fr}.review-card{padding:20px}.contact-details .contact-email{font-size:12px}
 }
 @media(max-width:360px){.gallery-grid{gap:8px}.gallery-card{padding:5px}.gallery-meta h2{font-size:9px}}
+
+
+/* Selected Work — four equal, larger cards in one desktop row */
+@media (min-width: 901px) {
+  .work-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    align-items: start;
+  }
+  .work-card,
+  .work-card.work-large,
+  .work-card.work-wide {
+    grid-column: auto;
+    width: 100%;
+    margin: 0;
+  }
+  .work-image,
+  .work-large .work-image,
+  .work-wide .work-image {
+    aspect-ratio: 0.78 / 1;
+  }
+  .work-meta {
+    padding: 16px 2px;
+  }
+  .work-meta b {
+    font-size: 12px;
+  }
+  .work-meta small {
+    font-size: 8px;
+  }
+}
