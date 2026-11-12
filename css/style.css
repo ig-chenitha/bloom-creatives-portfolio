@@ -690,3 +690,60 @@ html,body,.hero,.work,.footer{background-color:#000000!important;color:#ffffff}
 .contact{background:radial-gradient(ellipse at 12% 55%,rgba(255 255 255 .08),transparent 44%),radial-gradient(ellipse at 90% 50%,rgba(255 255 255 .05),transparent 48%),#000000}
 .contact-button:hover{box-shadow:0 0 30px rgba(255 255 255 .18)}
 ::selection{background:#ffffff;color:#000000}
+
+
+/* Desktop hero CTA: rectangular pill aligned to the right; keep mobile layout unchanged */
+@media (min-width:651px){
+  .hero-bottom{
+    justify-content:flex-end;
+    align-items:center;
+  }
+  .hero-description{display:none}
+  .hero-bottom .round-link{
+    width:auto;
+    min-width:168px;
+    height:50px;
+    padding:0 24px;
+    border:1px solid #777777;
+    border-radius:999px;
+    background:#111111;
+    color:#ffffff;
+    display:inline-flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    font-size:10px;
+    line-height:1;
+    letter-spacing:1px;
+    white-space:nowrap;
+    transform:none;
+  }
+  .hero-bottom .round-link br{display:none}
+  .hero-bottom .round-link span{
+    font-size:15px;
+    margin:0;
+    color:#ffffff;
+  }
+  .hero-bottom .round-link:hover{
+    background:#ffffff;
+    border-color:#ffffff;
+    color:#000000;
+    transform:translateY(-2px);
+  }
+  .hero-bottom .round-link:hover span{color:#000000}
+}
+@media (max-width:650px){
+  .hero-description{display:block}
+  .hero-bottom{justify-content:space-between;align-items:flex-start}
+  .hero-bottom .round-link{
+    width:78px;
+    height:78px;
+    padding:0;
+    border-radius:50%;
+    flex-direction:column;
+    gap:0;
+    white-space:normal;
+  }
+  .hero-bottom .round-link br{display:initial}
+}
