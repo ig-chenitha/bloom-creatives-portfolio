@@ -1586,23 +1586,3 @@ a:active,button:active,[role="button"]:active{
 .work-gallery-cta>.work-gallery-link:hover{background:#dcdcdc!important;color:#000!important;border-color:rgba(255,255,255,.7)!important;transform:translateY(-1px)!important;box-shadow:0 0 28px #FFFFFF25!important}
 .work-gallery-cta>.work-gallery-link:hover span{transform:translate(2px,-1px)}
 @media(max-width:650px){.work-gallery-cta>.work-gallery-link{min-width:0!important;min-height:0!important;padding:13px 20px!important;font-size:10px!important}}
-
-
-/* Desktop About section artwork — a floating showcase of real Bloom projects */
-@media(min-width:901px){
-  .intro{min-height:690px}
-  .intro-copy{position:relative;z-index:2;max-width:58%}
-  .intro-art{position:absolute;z-index:1;right:5.5vw;top:50%;transform:translateY(-48%);width:min(39vw,510px);height:490px;display:block;pointer-events:none}
-  .intro-art-glow{position:absolute;inset:12% 8%;border-radius:50%;background:radial-gradient(ellipse,rgba(190,190,190,.19),rgba(100,100,100,.07) 42%,transparent 72%);filter:blur(24px)}
-  .intro-art-orbit{position:absolute;left:50%;top:48%;border:1px solid rgba(255,255,255,.12);border-radius:50%;transform:translate(-50%,-50%) rotate(-24deg)}
-  .intro-art-orbit-one{width:92%;height:72%}
-  .intro-art-orbit-two{width:75%;height:96%;transform:translate(-50%,-50%) rotate(28deg);border-color:rgba(255,255,255,.075)}
-  .intro-art-card{position:absolute;overflow:hidden;padding:8px;border:1px solid rgba(255,255,255,.23);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.16),rgba(255,255,255,.035) 48%,rgba(255,255,255,.09));box-shadow:0 24px 65px rgba(0,0,0,.65),inset 0 1px 1px rgba(255,255,255,.2);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
-  .intro-art-card img{display:block;width:100%;height:100%;object-fit:cover;border-radius:11px;filter:saturate(.82) contrast(1.04)}
-  .intro-art-card-main{width:43%;height:66%;left:31%;top:16%;z-index:3;transform:rotate(-5deg)}
-  .intro-art-card-back{width:36%;height:53%;left:8%;top:23%;z-index:2;transform:rotate(-15deg)}
-  .intro-art-card-side{width:35%;height:50%;right:5%;top:34%;z-index:4;transform:rotate(11deg)}
-  .intro-art-caption{position:absolute;right:8%;bottom:5%;font-size:8px;letter-spacing:2px;color:#a5a5a5}
-  .intro-art-caption b{color:#fff;margin:0 7px}
-}
-@media(max-width:900px){.intro-art{display:none}}
