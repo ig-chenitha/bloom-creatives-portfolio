@@ -642,3 +642,51 @@ html,body,.hero,.work,.footer{background-color:#000000}
 .contact{background:radial-gradient(ellipse at 12% 55%,rgba(13,35,83,.24),transparent 44%),radial-gradient(ellipse at 90% 50%,rgba(25,60,125,.2),transparent 48%),#000}
 .contact-button:hover{box-shadow:0 0 38px rgba(25,67,145,.46)}
 ::selection{background:#2856A8;color:#fff}
+
+
+/* BLOOM monochrome refresh: remove the 3D hero animation and use black + white */
+.hero:after{
+  display:none !important;
+  animation:none !important;
+  content:none !important;
+}
+:root{
+  --bloom-blue:#FFFFFF;
+  --bloom-purple:#FFFFFF;
+  --blue:#FFFFFF;
+  --black:#000000;
+  --panel:#090909;
+  --panel2:#111111;
+  --line:#ffffff2b;
+}
+html,body,.hero,.work,.footer{background-color:#000!important;color:#fff}
+.site-header{background:rgba(0,0,0,.94);border-color:#ffffff24}
+.navigation a:hover,.text-link:hover,.nav-contact span,.text-link span,
+.availability i,.hero .eyebrow,.intro-copy .eyebrow,.contact .eyebrow,
+.blue-dot,.round-link span,.hero-marquee b,.intro-copy h2 span,
+.section-heading h2 span,.work-heading h2 span,.approach h2 span,
+.contact h2 span,.approach-steps b,.footer-brand span,.work-meta i,
+.work-note span{color:#fff}
+.navigation .nav-contact,.contact-button,.work-image:after,
+.service-list article>b{
+  background:#fff;color:#000;box-shadow:0 0 22px rgba(255,255,255,.12)
+}
+.availability i{background:#fff;box-shadow:0 0 12px #fff}
+.hero:before{background:radial-gradient(ellipse,rgba(255,255,255,.10),transparent 70%)}
+.intro:before,.contact:before{background:radial-gradient(ellipse at 30% 30%,rgba(255,255,255,.18),#555 24%,#171717 58%,#000 78%);filter:none}
+#about .intro-copy{
+ border-color:#ffffff30;
+ background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.025) 48%,rgba(255,255,255,.06)),rgba(5,5,5,.62);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 22px 70px rgba(0,0,0,.5),0 0 36px rgba(255,255,255,.045)
+}
+#about .intro-copy:before{background:radial-gradient(circle,rgba(255,255,255,.12),transparent 70%)}
+.service-list article{background:linear-gradient(145deg,#111,#050505);border-color:#ffffff24}
+.service-list article:hover{border-color:#fff;background:linear-gradient(145deg,#1a1a1a,#080808);box-shadow:0 20px 55px rgba(255,255,255,.07)}
+.service-list article>span{color:#fff}
+.service-list article>b{background:#fff;color:#000}
+.round-link:hover{background:#fff;border-color:#fff;color:#000}
+.round-link:hover span{color:#000}
+.approach{background:radial-gradient(ellipse at 8% 45%,rgba(255,255,255,.07),transparent 48%),radial-gradient(ellipse at 90% 50%,rgba(255,255,255,.05),transparent 48%),#000}
+.contact{background:radial-gradient(ellipse at 12% 55%,rgba(255,255,255,.08),transparent 44%),radial-gradient(ellipse at 90% 50%,rgba(255,255,255,.05),transparent 48%),#000}
+.contact-button:hover{box-shadow:0 0 30px rgba(255,255,255,.18)}
+::selection{background:#fff;color:#000}
