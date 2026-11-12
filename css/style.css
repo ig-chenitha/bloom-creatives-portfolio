@@ -585,3 +585,60 @@ html,body,.hero,.work,.footer{background-color:#000000}
 .contact{background:radial-gradient(ellipse at 12% 55%,rgba(100,0,190,.2),transparent 44%),radial-gradient(ellipse at 90% 50%,rgba(161,0,255,.18),transparent 48%),#000}
 .contact-button:hover{box-shadow:0 0 38px rgba(161,0,255,.45)}
 ::selection{background:#A100FF;color:#fff}
+
+
+/* Final Bloom palette: deep midnight blue + pure black (white typography retained) */
+:root{
+  --bloom-blue:#102A66;
+  --bloom-purple:#102A66;
+  --blue:#102A66;
+  --black:#000000;
+  --panel:#050A18;
+  --panel2:#09132B;
+}
+html,body,.hero,.work,.footer{background-color:#000000}
+.cursor-glow{background:radial-gradient(circle,rgba(24,65,145,.24),transparent 70%)}
+.site-header{background:linear-gradient(110deg,rgba(5,12,30,.96),rgba(0,0,0,.94))}
+.navigation a:hover,.text-link:hover,.nav-contact span,.text-link span,
+.availability i,.hero .eyebrow,.intro-copy .eyebrow,.contact .eyebrow,
+.blue-dot,.round-link span,.hero-marquee b,.intro-copy h2 span,
+.section-heading h2 span,.work-heading h2 span,.approach h2 span,
+.contact h2 span,.approach-steps b,.footer-brand span,.work-meta i,
+.work-note span{color:#477FE0}
+.navigation .nav-contact,.contact-button,.work-image:after{
+  background:linear-gradient(110deg,#0A1D49,#173B83 58%,#2856A8);
+  color:#fff;box-shadow:0 0 28px rgba(25,67,145,.36)
+}
+.availability i{background:#2856A8;box-shadow:0 0 14px #2856A8}
+.hero:before{background:radial-gradient(ellipse,rgba(20,55,125,.28),transparent 70%)}
+.hero:after{
+  background:
+    radial-gradient(ellipse at 27% 27%,rgba(205,224,255,.58) 0 1.8%,rgba(93,142,220,.48) 5%,transparent 19%),
+    radial-gradient(ellipse at 33% 37%,rgba(35,91,185,.96) 0 14%,transparent 43%),
+    radial-gradient(ellipse at 72% 29%,rgba(29,65,145,.95) 0 8%,transparent 42%),
+    radial-gradient(ellipse at 68% 78%,rgba(8,25,72,.96) 0 15%,transparent 47%),
+    linear-gradient(132deg,#477BCB 0%,#17458F 26%,#0B245B 56%,#1C3F85 82%,#030916 100%);
+  border-color:rgba(130,165,225,.34);
+  filter:drop-shadow(0 0 24px rgba(25,67,145,.58)) drop-shadow(0 0 70px rgba(8,25,72,.48));
+  box-shadow:inset 13px 12px 25px rgba(210,228,255,.24),inset -20px -26px 38px rgba(0,0,0,.72),inset 0 -3px 12px rgba(100,145,220,.2)
+}
+.intro:before,.contact:before{
+  background:radial-gradient(ellipse at 30% 30%,rgba(190,215,255,.34) 0 3%,#2856A8 18%,#102A66 48%,#030916 78%);
+  filter:drop-shadow(0 0 38px rgba(25,67,145,.48))
+}
+#about .intro-copy{
+  border-color:rgba(80,125,200,.3);
+  background:linear-gradient(135deg,rgba(20,55,125,.2),rgba(255,255,255,.035) 45%,rgba(8,25,72,.18)),rgba(3,7,17,.55);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 22px 70px rgba(0,0,0,.48),0 0 48px rgba(20,55,125,.18)
+}
+#about .intro-copy:before{background:radial-gradient(circle,rgba(75,125,205,.22),transparent 70%)}
+.service-list article{background:linear-gradient(145deg,rgba(13,35,83,.2),rgba(25,60,125,.12));border-color:rgba(255,255,255,.18)}
+.service-list article:hover{border-color:rgba(90,140,220,.72);background:linear-gradient(145deg,rgba(15,45,105,.3),rgba(25,60,125,.2));box-shadow:0 20px 55px rgba(10,35,90,.26)}
+.service-list article>span{color:#8DB5F0}
+.service-list article>b{background:linear-gradient(135deg,#102A66,#2856A8);color:#fff}
+.round-link:hover{background:linear-gradient(110deg,#102A66,#2856A8);border-color:#6C98DB;color:#fff}
+.round-link:hover span{color:#fff}
+.approach{background:radial-gradient(ellipse at 8% 45%,rgba(13,35,83,.2),transparent 48%),radial-gradient(ellipse at 90% 50%,rgba(25,60,125,.18),transparent 48%),#000}
+.contact{background:radial-gradient(ellipse at 12% 55%,rgba(13,35,83,.24),transparent 44%),radial-gradient(ellipse at 90% 50%,rgba(25,60,125,.2),transparent 48%),#000}
+.contact-button:hover{box-shadow:0 0 38px rgba(25,67,145,.46)}
+::selection{background:#2856A8;color:#fff}
