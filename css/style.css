@@ -301,3 +301,14 @@ body{background:#030006;color:#fbf5ff}
     border-radius: 22px;
   }
 }
+
+
+/* Add a little breathing room between the About label and glass panel */
+#about .intro-copy {
+  margin-top: 18px;
+}
+@media (max-width: 700px) {
+  #about .intro-copy {
+    margin-top: 14px;
+  }
+}
