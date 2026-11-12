@@ -472,3 +472,56 @@ html,body{background:#000000;color:#FFFFFF}
   background:radial-gradient(ellipse at 28% 24%,#168BFF 0 3%,#5CB8FF 9%,#168BFF 24%,#3920D9 43%,#8D24FF 59%,#26005E 74%);
   box-shadow:inset 12px 10px 18px rgba(22,139,255,.72),inset -18px -22px 30px #000;
 }
+
+
+/* Hero visual: glossy liquid-glass bubble, not a round sphere */
+.hero:after{
+  width:min(48vw,650px);
+  height:min(45vw,590px);
+  right:4%;
+  top:13%;
+  min-width:320px;
+  min-height:300px;
+  border-radius: 62% 38% 54% 46% / 43% 54% 46% 57%;
+  background:
+    radial-gradient(ellipse at 27% 27%,rgba(255,255,255,.92) 0 1.8%,rgba(158,220,255,.82) 5%,transparent 19%),
+    radial-gradient(ellipse at 33% 37%,rgba(22,139,255,.96) 0 14%,transparent 43%),
+    radial-gradient(ellipse at 72% 29%,rgba(161,0,255,.95) 0 8%,transparent 42%),
+    radial-gradient(ellipse at 68% 78%,rgba(79,31,226,.9) 0 15%,transparent 47%),
+    linear-gradient(132deg,#7ed2ff 0%,#168bff 26%,#3820d8 56%,#a100ff 82%,#30005f 100%);
+  border:1px solid rgba(211,231,255,.34);
+  filter:drop-shadow(0 0 24px rgba(22,139,255,.58)) drop-shadow(0 0 70px rgba(161,0,255,.42));
+  box-shadow:
+    inset 13px 12px 25px rgba(255,255,255,.48),
+    inset -20px -26px 38px rgba(0,0,0,.62),
+    inset 0 -3px 12px rgba(158,220,255,.28);
+  transform:rotate(-19deg);
+  animation:liquidBubbleMorph 11s ease-in-out infinite;
+  opacity:.98;
+}
+@keyframes liquidBubbleMorph{
+  0%,100%{
+    border-radius:62% 38% 54% 46% / 43% 54% 46% 57%;
+    transform:rotate(-19deg) translate3d(0,0,0) scale(1);
+  }
+  35%{
+    border-radius:43% 57% 39% 61% / 56% 38% 62% 44%;
+    transform:rotate(-11deg) translate3d(-8px,-13px,0) scale(1.025);
+  }
+  70%{
+    border-radius:55% 45% 63% 37% / 39% 62% 38% 61%;
+    transform:rotate(-24deg) translate3d(8px,8px,0) scale(.985);
+  }
+}
+@media(max-width:900px){
+  .hero:after{right:-8%;width:min(62vw,520px);height:min(58vw,500px)}
+}
+@media(max-width:650px){
+  .hero:after{
+    width:330px;height:310px;min-width:0;min-height:0;
+    right:-105px;top:18%;opacity:.78;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .hero:after{animation:none}
+}
