@@ -2884,3 +2884,21 @@ body.skills-page footer{
     margin:0!important;
   }
 }
+
+
+/* Keep the mobile gallery in the original monochrome black, white and grey palette */
+@media(max-width:600px){
+  body:not(.gallery-page) #gallery .gallery-tile{
+    background:linear-gradient(145deg,#191919,#0c0c0c)!important;
+    border-color:#ffffff1c!important;
+  }
+  body:not(.gallery-page) #gallery .gallery-tile span{
+    color:#999!important;
+  }
+  body:not(.gallery-page) #gallery .gallery-tile strong{
+    color:#f5f5f2!important;
+  }
+  body:not(.gallery-page) #gallery .gallery-tile small{
+    color:#888!important;
+  }
+}
