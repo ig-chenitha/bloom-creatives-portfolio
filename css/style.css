@@ -829,3 +829,42 @@ html,body,.hero,.work,.footer{background-color:#000000!important;color:#ffffff}
     margin:0;
   }
 }
+
+
+/* BLOOM MIDNIGHT BLUE PALETTE — option 01 */
+:root{
+  --black:#000000;
+  --panel:#080B18;
+  --panel2:#0B1022;
+  --white:#FFFFFF;
+  --muted:#AAB8D8;
+  --#777777:#245BFF;
+  --line:#FFFFFF20;
+}
+body{background:#000000;color:#FFFFFF}
+.cursor-glow{background:radial-gradient(circle,#245BFF24 0,#65B7FF12 38%,transparent 70%)}
+.site-header{border-color:#FFFFFF20;background:linear-gradient(110deg,#080B18E8,#000000E8)}
+.navigation a:hover,.text-link:hover{color:#65B7FF}
+.navigation .nav-contact{background:linear-gradient(110deg,#245BFF,#1736B8);box-shadow:0 0 24px #245BFF55}
+.nav-contact span,.availability i{color:#65B7FF}
+.availability i{background:#245BFF;box-shadow:0 0 14px #245BFF}
+.hero:before{background:radial-gradient(ellipse,#245BFF38 0,#080B1833 36%,transparent 69%)}
+.hero:after{
+  background:radial-gradient(ellipse at 30% 25%,#B8E3FF 0 3%,#65B7FF 10%,#245BFF 26%,#1736B8 43%,#245BFF 51%,#080B18 72%);
+  filter:drop-shadow(0 0 25px #245BFF8c) drop-shadow(0 0 85px #245BFF55);
+  box-shadow:inset 12px 10px 18px #B8E3FF88,inset -18px -22px 30px #000000;
+}
+.hero .eyebrow,.intro-copy h2 span,.section-heading h2 span,.work-heading h2 span,.approach h2 span,.contact h2 span{color:#65B7FF}
+.round-link{border-color:#245BFF88}
+.round-link span{color:#65B7FF}
+.round-link:hover{background:#245BFF;border-color:#245BFF;box-shadow:0 0 30px #245BFF66}
+.hero-marquee b,.service-list article>span,.service-list article>b,.work-meta i,.work-note span,.footer-brand span{color:#65B7FF}
+.service-list article:hover{background:#080B18}
+.work-image:after{background:#245BFF;color:#FFFFFF}
+.contact:before{background:radial-gradient(circle,#245BFF30,transparent 70%)}
+.contact-button{background:linear-gradient(110deg,#245BFF,#1736B8);color:#FFFFFF}
+.contact-button:hover{box-shadow:0 0 35px #245BFF77}
+::selection{background:#245BFF;color:#FFFFFF}
+@media(max-width:650px){
+  .navigation{background:#080B18;border-color:#245BFF44}
+}
