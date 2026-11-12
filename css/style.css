@@ -1626,3 +1626,33 @@ a:active,button:active,[role="button"]:active{
 @media(min-width:651px) and (max-width:900px){.hero h1 .hero-brand-line{font-size:clamp(50px,9vw,82px)!important}}
 @media(max-width:650px){.hero h1 .hero-brand-line{font-size:clamp(29px,9.8vw,48px)!important;letter-spacing:-.10em!important}}
 @media(max-width:360px){.hero h1 .hero-brand-line{font-size:clamp(26px,9vw,34px)!important}}
+
+
+/* BLOOM — compact contact page and smaller shared footer on every page */
+.page-intro .section-label{margin-bottom:38px!important}
+.contact-layout{gap:clamp(28px,5vw,72px)!important;padding-top:8px!important;padding-bottom:65px!important}
+.contact-details h2{font-size:clamp(30px,4vw,48px)!important;line-height:.98!important;margin:16px 0!important}
+.contact-details>p:not(.eyebrow){font-size:12px!important;line-height:1.75!important}
+.contact-details .contact-email{font-size:12px!important;margin:18px 0 28px!important;padding-bottom:9px!important}
+.contact-detail-line{max-width:310px!important;padding:11px 0!important;font-size:8px!important}
+.contact-form{padding:23px!important;gap:8px!important;border-radius:14px!important}
+.contact-form label{font-size:8px!important;margin-top:7px!important}
+.contact-form input,.contact-form textarea,.contact-form select{padding:12px!important;font-size:12px!important}
+.contact-form textarea{min-height:105px!important}
+.contact-form .form-submit{padding:13px 16px!important;font-size:9px!important}
+.footer{padding:30px 7vw 18px!important;gap:14px!important}
+.footer-brand img{width:112px!important;max-width:100%!important;max-height:34px!important;object-fit:contain!important}
+.footer p{font-size:9px!important;line-height:1.6!important;margin:5px 0!important}
+.footer>div{gap:14px!important}
+.footer>div a,.footer small{font-size:7px!important;letter-spacing:.7px!important}
+.footer small{padding-top:13px!important;margin-top:12px!important}
+@media(max-width:650px){
+  .page-intro .section-label{margin-bottom:30px!important}
+  .contact-layout{padding-bottom:48px!important;gap:22px!important}
+  .contact-details h2{font-size:36px!important}
+  .contact-form{padding:17px!important}
+  .footer{padding:25px 7vw 16px!important;gap:10px!important}
+  .footer-brand img{width:100px!important;max-height:30px!important}
+  .footer>div{gap:11px!important;flex-wrap:wrap!important}
+  .footer>div a,.footer small{font-size:6.5px!important}
+}
