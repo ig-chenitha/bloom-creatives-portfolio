@@ -747,3 +747,58 @@ html,body,.hero,.work,.footer{background-color:#000000!important;color:#ffffff}
   }
   .hero-bottom .round-link br{display:initial}
 }
+
+
+/* Correct desktop hero layout: keep intro paragraph, move CTA to far-right marked position */
+@media (min-width:651px){
+  .hero-content{
+    width:100%;
+    max-width:none;
+  }
+  .hero-bottom{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+  }
+  .hero-description{
+    display:block;
+    max-width:430px;
+    margin:0;
+  }
+  .hero-bottom .round-link{
+    width:auto;
+    min-width:168px;
+    height:50px;
+    padding:0 24px;
+    border:1px solid #777777;
+    border-radius:999px;
+    background:#111111;
+    color:#ffffff;
+    display:inline-flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    font-size:10px;
+    line-height:1;
+    letter-spacing:1px;
+    white-space:nowrap;
+    transform:none;
+    flex-shrink:0;
+  }
+  .hero-bottom .round-link br{display:none}
+  .hero-bottom .round-link span{
+    font-size:15px;
+    margin:0;
+    color:#ffffff;
+  }
+  .hero-bottom .round-link:hover{
+    background:#ffffff;
+    border-color:#ffffff;
+    color:#000000;
+    transform:translateY(-2px);
+  }
+  .hero-bottom .round-link:hover span{color:#000000}
+}
