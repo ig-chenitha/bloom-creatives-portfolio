@@ -1428,3 +1428,36 @@ a:active,button:active,[role="button"]:active{
   .lightbox{padding:18px}
   .lightbox img{max-width:94vw;max-height:82vh}
 }
+
+
+/* BLOOM: seamless, never-ending homepage slogan ticker */
+.hero-marquee{overflow:hidden!important}
+.hero-marquee .marquee-track{
+  display:flex!important;
+  width:max-content!important;
+  animation:bloom-marquee 24s linear infinite!important;
+  will-change:transform;
+}
+.hero-marquee .marquee-track span{
+  display:block;
+  flex:0 0 auto;
+  white-space:nowrap;
+}
+@keyframes bloom-marquee{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+/* Match About body copy to the smaller supporting text used elsewhere */
+#about .intro-copy>p:not(.eyebrow){
+  font-size:12px!important;
+  line-height:1.85!important;
+}
+@media(max-width:650px){
+  #about .intro-copy>p:not(.eyebrow){
+    font-size:11px!important;
+    line-height:1.8!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-marquee .marquee-track{animation:none!important}
+}
