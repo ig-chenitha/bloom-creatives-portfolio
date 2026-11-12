@@ -1,7 +1,8 @@
 const menuButton=document.querySelector('.menu-toggle');const nav=document.querySelector('.navigation');menuButton?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});nav?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menuButton?.setAttribute('aria-expanded','false');}));document.querySelector('#year').textContent=new Date().getFullYear();const lightbox=document.querySelector('.lightbox');const lightboxImage=lightbox.querySelector('img');const lightboxCaption=lightbox.querySelector('p');function closeLightbox(){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');document.body.style.overflow='';}// BLOOM VIEW PROJECT + BASIC IMAGE SAVE PROTECTION
 document.querySelectorAll('.work-card').forEach(card=>{
   const viewButton=card.querySelector('.work-view');
-  viewButton?.addEventListener('click',()=>{
+  viewButton?.addEventListener('click',event=>{
+    event.stopPropagation();
     lightboxImage.src=card.dataset.image;
     lightboxImage.alt=card.dataset.title;
     lightboxCaption.textContent=card.dataset.title;
