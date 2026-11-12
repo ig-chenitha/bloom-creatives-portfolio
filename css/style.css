@@ -1355,30 +1355,41 @@ a:active,button:active,[role="button"]:active{
 }
 
 
-/* BLOOM PROJECT PREVIEW: open artwork only from the View Project control */
+/* BLOOM PROJECT PREVIEW: one overlay button per poster */
 .work-card{cursor:default!important}
-.work-card:hover{transform:none!important}
-.work-card:hover .work-image img{transform:none!important}
+.work-card:hover{transform:translateY(-3px)!important}
+.work-image{position:relative}
 .work-image:after{display:none!important}
 .work-view{
+  position:absolute;
+  right:12px;
+  bottom:12px;
+  z-index:2;
   display:inline-flex;
   align-items:center;
   justify-content:center;
   gap:9px;
-  flex:0 0 auto;
-  border:1px solid rgba(255,255,255,.34);
+  border:1px solid rgba(255,255,255,.55);
   border-radius:999px;
-  padding:9px 12px;
+  padding:11px 15px;
   background:#fff;
   color:#000;
-  font-size:8px;
+  font-size:9px;
   font-weight:700;
-  letter-spacing:.7px;
+  letter-spacing:.8px;
   cursor:pointer;
-  transition:background .2s ease,color .2s ease,transform .2s ease;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(8px);
+  transition:opacity .22s ease,transform .22s ease,visibility .22s ease,background .2s ease;
 }
-.work-view span{font-size:13px;line-height:1}
-.work-view:hover{background:#cfcfcf;transform:translateY(-1px)}
+.work-view span{font-size:14px;line-height:1}
+.work-card:hover .work-view,.work-view:focus-visible{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+.work-view:hover{background:#d8d8d8}
 .work-image img,.lightbox img{
   -webkit-user-drag:none;
   user-select:none;
@@ -1409,9 +1420,11 @@ a:active,button:active,[role="button"]:active{
   background:#151515;
   font-size:30px;
 }
+@media(hover:none){
+  .work-view{opacity:1;visibility:visible;transform:none}
+}
 @media(max-width:650px){
-  .work-meta{align-items:flex-start!important;flex-direction:column;gap:9px!important}
-  .work-view{font-size:7px;padding:8px 10px}
+  .work-view{right:7px;bottom:7px;padding:8px 10px;font-size:7px;gap:6px}
   .lightbox{padding:18px}
   .lightbox img{max-width:94vw;max-height:82vh}
 }
